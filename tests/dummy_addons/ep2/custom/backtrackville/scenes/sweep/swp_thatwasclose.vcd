@@ -1,0 +1,34 @@
+// Choreo version 1
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.thatwasclose"
+    {
+      time 0.500000 2.148617
+      param "swp.thatwasclose"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.000000 3.000000
+      param "!player"
+    }
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

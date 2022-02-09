@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "character1"
+{
+  channel "speech"
+  {
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

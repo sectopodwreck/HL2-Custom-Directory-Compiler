@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "odessa"
+{
+  channel "vo"
+  {
+    event speak "ahom_pt2.cubb_usemortar"
+    {
+      time 0.246667 4.767098
+      param "ahom_pt2.cubb_usemortar"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

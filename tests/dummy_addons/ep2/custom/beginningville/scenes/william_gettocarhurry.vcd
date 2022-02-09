@@ -1,0 +1,76 @@
+// Choreo version 1
+event loop "Loop ending"
+{
+  time 13.453334 -1.000000
+  param "12.000000"
+  loopcount "-1"
+}
+actor "William"
+{
+  channel "WAV"
+  {
+    event speak "ListentooMany"
+    {
+      time 0.160000 3.759093
+      param "william_listen_toomany.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "GetToCar"
+    {
+      time 3.833333 9.672607
+      param "william_gettocar.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Hurry"
+    {
+      time 9.753334 11.630273
+      param "william_hurry.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+  }
+  channel "Looking at"
+  {
+    event lookat "LookAtPlayer"
+    {
+      time 0.060000 10.186667
+      param "!player"
+      active 0
+    }
+  }
+  channel "Move to"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "Sit"
+    {
+      time -0.006666 13.500001
+      param "sit_ground"
+      sequenceduration 0.333333
+    }
+  }
+  channel "Loop"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

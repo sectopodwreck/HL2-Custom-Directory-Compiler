@@ -1,0 +1,125 @@
+// Choreo version 1
+actor "odessa"
+{
+  channel "audio"
+  {
+    event speak "odessa.nlo_cub_wherewasi"
+    {
+      time 7.646666 10.320543
+      param "odessa.nlo_cub_wherewasi"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_R_type"
+    {
+      time 0.300000 3.933333
+      param "g_R_type"
+      absolutetags playback_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      sequenceduration 3.633333
+    }
+    event gesture "G_shrug"
+    {
+      time 7.613334 9.313334
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "hg_headshake"
+    {
+      time 5.273334 6.906667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.106667 3.393334
+      param "!target1"
+    }
+    event lookat "Look at !target1"
+    {
+      time 7.400000 10.400001
+      param "!target1"
+    }
+    event lookat "Look at !target2"
+    {
+      time 5.586667 6.600000
+      param "!target2"
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "flex"
+  {
+  }
+  channel "trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 3.560000 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

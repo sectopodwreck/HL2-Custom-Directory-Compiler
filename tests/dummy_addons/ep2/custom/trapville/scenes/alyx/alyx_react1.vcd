@@ -1,0 +1,164 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_str_uhoh"
+    {
+      time 0.080000 0.912018
+      param "ep_02.al_str_uhoh"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_02.al_rbed_rocksshifted01"
+    {
+      time 1.693333 3.307097
+      param "ep_02.al_rbed_rocksshifted01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_02.al_rbed_whatnow01"
+    {
+      time 3.600001 4.285353
+      param "ep_02.al_rbed_whatnow01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "A_g_buggy_lh_palmup"
+    {
+      time 1.233334 3.966667
+      param "A_g_buggy_lh_palmup"
+      absolutetags playback_time
+      {
+        "apex" 0.250976
+        "accent" 0.327073
+        "loop" 0.379756
+        "end" 0.558242
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.189655
+        "accent" 0.275862
+        "loop" 0.344828
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "A_bg_chinout"
+    {
+      time 2.880000 5.679999
+      param "A_bg_chinout"
+      absolutetags playback_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.156626
+        "extreme" 0.349398
+        "loop" 0.542169
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.060000 5.420000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.9712 0.0000
+          1.1038 0.7600
+          1.2231 0.0000
+          3.5371 0.0000
+          3.7178 0.6600
+          3.8428 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          0.0477 0.0000
+          0.7667 0.7500
+          2.7776 0.7000
+          3.3741 0.3800
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          3.3569 0.0000
+          3.7052 1.0000
+          4.7923 1.0000
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          3.3416 0.0000
+          3.7094 1.0000
+          4.7904 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.0546 0.0000
+          0.8012 0.6600
+          2.7897 0.6100
+          3.3552 0.3800
+          3.6826 0.7600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.213333 4.220000
+      param "!player"
+      event_ramp
+      {
+        0.0220 0.0000
+        0.4960 1.0000
+        2.5013 1.0000
+      }
+    }
+    event lookat "Look at backtrack_door2"
+    {
+      time 0.026667 1.693334
+      param "backtrack_door2"
+      event_ramp
+      {
+        0.0160 0.0000
+        0.3060 1.0000
+        1.4920 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "104"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

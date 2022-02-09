@@ -1,0 +1,49 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_ambush_fried01"
+    {
+      time 0.073334 3.624876
+      param "ep_02.al_ambush_fried01"
+      param2 "0.850"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.060000 4.060000
+      param "!player"
+      event_ramp
+      {
+        0.0360 0.0000
+        0.5120 1.0000
+        3.4920 1.0000
+      }
+      lockbodyfacing
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

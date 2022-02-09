@@ -1,0 +1,294 @@
+
+
+"klems.docks"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"ambient\water\lake_water.wav"
+		"pitch"		"100"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_lakeshoreline"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.Street"
+		"volume"	"0.6"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"1.0"
+	}
+}
+
+"klems.streets"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"
+		"volume"	"0.35"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.Street"
+		"volume"	"0.8"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"1.0"
+	}
+}
+
+"klems.rooftops"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ambient\wind\wind_rooftop1.wav"
+		"pitch"		"100"
+	}
+	
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.75"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"1.0"
+	}
+}
+
+"klems.inside.generic" 
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"ambient/levels/canals/tunnel_wind_loop1.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.WoodBuilding"
+		"volume"	"1.0"
+	}
+
+}
+
+"klems.inside.church"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"ambient\atmosphere\corridor.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.WoodBuilding"
+		"volume"	"1.0"
+	}
+}
+
+"klems.sewers"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient\levels\canals\water_rivulet_loop2.wav"
+		"pitch"		"100"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"ambient/levels/canals/tunnel_wind_loop1.wav"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_fardrips"
+		"volume"	"1.0"
+	}
+}
+
+"klems.manor.outside"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ambient\wind\wind_rooftop1.wav"
+		"pitch"		"100"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_windgusts"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_shoreline"
+		"volume"	"0.5"
+	}
+
+}
+
+"klems.manor.inside"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\underground_hall_loop1.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"2, 6"
+		"volume"	"0.35,0.6"
+		"pitch"		"70,90"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/materials/wood_creak1.wav"
+			"wave"	"ambient/materials/wood_creak2.wav"
+			"wave"	"ambient/materials/wood_creak3.wav"
+			"wave"	"ambient/materials/wood_creak4.wav"
+			"wave"	"ambient/materials/wood_creak5.wav"
+			"wave"	"ambient/materials/wood_creak6.wav"
+		}
+		
+	}
+	
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/wind/wind_moan1.wav"
+			"wave"	"ambient/wind/wind_moan2.wav"
+			"wave"	"ambient/wind/wind_snippet1.wav"
+			"wave"	"ambient/wind/wind_snippet2.wav"
+			"wave"	"ambient/wind/wind_moan4.wav"
+			"wave"	"ambient/atmosphere/hole_hit1.wav"
+			"wave"	"ambient/atmosphere/hole_hit5.wav"
+			"wave"	"ambient/creatures/town_zombie_call1.wav"
+			"wave"	"ambient/creatures/town_moan1.wav"
+		}
+		
+	}
+	
+}
+
+"klems.caves"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"ambient\levels\citadel\citadel_drone_loop2.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"15, 20"
+		"volume"	"0.5,0.7"
+		"pitch"		"70,80"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/levels/citadel/citadel_flyer1.wav"
+			"wave"	"ambient\levels\citadel\citadel_hit1_adpcm.wav"
+		}
+		
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d3_citadel.util_hits"
+		"volume"	"1.0"
+	}
+	
+}
+
+"klems.asylum"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ambient\atmosphere\underground_hall_loop1.wav"
+		"pitch"		"100"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient\voices\crying_loop1.wav"
+		"pitch"		"100"
+	}
+
+	"playrandom"
+	{
+		"time"		"1, 4"
+		"volume"	"0.25,0.45"
+		"pitch"		"90,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/town_scared_sob1.wav"
+			"wave"	"ambient/creatures/town_scared_sob2.wav"
+			"wave"	"ambient/creatures/town_scared_breathing1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing2.wav"
+			"wave"	"ambient/creatures/town_muffled_cry1.wav"
+			"wave"	"ambient/voices/cough1.wav"
+			"wave"	"ambient/voices/cough2.wav"
+		}	
+	}
+}
+

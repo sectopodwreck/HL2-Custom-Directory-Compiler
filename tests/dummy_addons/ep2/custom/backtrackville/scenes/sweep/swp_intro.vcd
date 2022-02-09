@@ -1,0 +1,370 @@
+// Choreo version 1
+event section "pause"
+{
+  time 5.000000 -1.000000
+  param "noaction"
+}
+event section "pause2"
+{
+  time 30.500000 -1.000000
+  param "noaction"
+}
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.intro1"
+    {
+      time 0.113333 2.400499
+      param "swp.intro1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro2"
+    {
+      time 5.500000 6.719048
+      param "swp.intro2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro3"
+    {
+      time 7.321112 11.280114
+      param "swp.intro3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro4a"
+    {
+      time 12.001113 13.533630
+      param "swp.intro4a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro4b"
+    {
+      time 13.687778 16.567053
+      param "swp.intro4b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro5a"
+    {
+      time 17.227777 17.912766
+      param "swp.intro5a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro5b"
+    {
+      time 18.034445 20.658300
+      param "swp.intro5b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro6"
+    {
+      time 21.481112 25.370453
+      param "swp.intro6"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro7a"
+    {
+      time 25.507778 28.421883
+      param "swp.intro7a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro7b"
+    {
+      time 28.681112 30.469049
+      param "swp.intro7b"
+      resumecondition
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro8a"
+    {
+      time 31.000000 33.554195
+      param "swp.intro8a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro8b"
+    {
+      time 33.641113 34.929821
+      param "swp.intro8b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro9a"
+    {
+      time 35.987778 36.556667
+      param "swp.intro9a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro9b"
+    {
+      time 36.741112 39.144379
+      param "swp.intro9b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.intro10"
+    {
+      time 40.334446 42.737713
+      param "swp.intro10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 3.500000 5.000000
+      param "!target1"
+      param2 "Walk"
+      resumecondition
+    }
+    event moveto "Moveto !target2"
+    {
+      time 21.500000 30.500000
+      param "!target2"
+      param2 "Walk"
+      resumecondition
+      distancetotarget 16.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 5.000000 30.500000
+      param "!player"
+    }
+    event lookat "Look at !target3"
+    {
+      time 31.000000 39.500000
+      param "!target3"
+    }
+    event lookat "Look at !player"
+    {
+      time 40.000000 43.000000
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 5.000000 21.000000
+      param "!player"
+    }
+    event face "Face !target3"
+    {
+      time 31.000000 39.500000
+      param "!target3"
+    }
+    event face "Face !player"
+    {
+      time 40.000000 43.000000
+      param "!player"
+    }
+    event face "Face !player"
+    {
+      time 28.500000 30.500000
+      param "!player"
+      lockbodyfacing
+    }
+  }
+  channel "misc"
+  {
+    event firetrigger "firetrigger1"
+    {
+      time 3.000000 -1.000000
+      param "1"
+    }
+    event firetrigger "firetrigger2"
+    {
+      time 30.600000 -1.000000
+      param "2"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "g_handclasp"
+    {
+      time 7.293334 12.733335
+      param "g_handclasp"
+      absolutetags playback_time
+      {
+        "in" 0.092850
+        "loop" 0.309499
+        "end" 0.788911
+        "out" 0.896880
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.153061
+        "loop" 0.510204
+        "end" 0.612245
+        "out" 0.816326
+      }
+      sequenceduration 3.300000
+    }
+    event gesture "g_refer_forward"
+    {
+      time 13.166666 15.766666
+      param "g_refer_forward"
+      absolutetags playback_time
+      {
+        "apex" 0.207792
+        "accent" 0.376623
+        "loop" 0.506494
+        "end" 0.636364
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.207792
+        "accent" 0.376623
+        "loop" 0.506494
+        "end" 0.636364
+      }
+      sequenceduration 2.600000
+    }
+    event gesture "g_palm_both"
+    {
+      time 17.006668 21.026667
+      param "g_palm_both"
+      absolutetags playback_time
+      {
+        "apex" 0.100778
+        "accent" 0.226751
+        "loop" 0.293936
+        "end" 0.868771
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "accent" 0.346154
+        "loop" 0.448718
+        "end" 0.769231
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "g_palm_mid_both"
+    {
+      time 21.686666 25.500002
+      param "g_palm_mid_both"
+      absolutetags playback_time
+      {
+        "apex" 0.176906
+        "accent" 0.291896
+        "loop" 0.406885
+        "end" 0.884817
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.238095
+        "accent" 0.392857
+        "loop" 0.547619
+        "end" 0.666667
+      }
+      sequenceduration 2.833333
+    }
+    event gesture "hg_shake"
+    {
+      time 33.173340 35.806671
+      param "hg_shake"
+      absolutetags playback_time
+      {
+        "apex" 0.089744
+        "extreme" 0.705128
+        "loop" 0.897436
+        "end" 0.910256
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.089744
+        "extreme" 0.705128
+        "loop" 0.897436
+        "end" 0.910256
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "g_handclasp"
+    {
+      time 35.933331 40.213333
+      param "g_handclasp"
+      absolutetags playback_time
+      {
+        "in" 0.118014
+        "loop" 0.393381
+        "end" 0.786604
+        "out" 0.911215
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.153061
+        "loop" 0.510204
+        "end" 0.612245
+        "out" 0.816326
+      }
+      sequenceduration 3.300000
+    }
+    event gesture "g_cross_palmout_right"
+    {
+      time 40.320004 42.620003
+      param "g_cross_palmout_right"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.632353
+        "loop" 0.882353
+        "end" 0.897059
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.632353
+        "loop" 0.882353
+        "end" 0.897059
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "sequence"
+  {
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "70"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

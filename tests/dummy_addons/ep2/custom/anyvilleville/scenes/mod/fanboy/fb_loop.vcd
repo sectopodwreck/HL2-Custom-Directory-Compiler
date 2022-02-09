@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "geture"
+  {
+    event gesture "g_clap"
+    {
+      time 0.066666 2.533333
+      param "g_clap"
+      absolutetags playback_time
+      {
+        "apex" 0.246575
+        "accent" 0.342466
+        "loop" 0.506849
+        "end" 0.671233
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.246575
+        "accent" 0.342466
+        "loop" 0.506849
+        "end" 0.671233
+      }
+    }
+  }
+  channel "faceto"
+  {
+    event face "Face !player"
+    {
+      time 0.046667 2.540001
+      param "!player"
+    }
+  }
+  channel "lookto"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.053333 2.520000
+      param "!player"
+    }
+  }
+  channel "trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 1.493334 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

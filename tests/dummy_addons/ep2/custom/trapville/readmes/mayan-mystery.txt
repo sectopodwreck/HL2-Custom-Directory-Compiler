@@ -1,0 +1,6 @@
+Credits
+
+Lindert (Wikimedia Commons) - Mayan Engraving texture source
+El Comandante (Wikimedia Commons) - Aztec calendar stone texture source
+CGTextures - source for many environmental textures
+Valve - source of a few stock sounds, soundscript template

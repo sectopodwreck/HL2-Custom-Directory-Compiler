@@ -1,0 +1,300 @@
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+
+//"levi.answer01"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/IdontseewhynotH.wav"
+//}
+//"levi.answer02"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Yeah01D.wav"
+//}
+//"levi.hello1"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/80sDatingVideoProfileLevi.wav"
+//}
+//"levi.hello2"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Hey01.wav"
+//}
+//"levi.hello3"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Hi02.wav"
+//}
+//"levi.sorry01"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Sorry04.wav"
+//}
+//"levi.sorry02"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Sorry05.wav"
+//}
+//"levi.sorry03"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Sorry06.wav"
+//}
+//"levi.sorry04"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/Sorry08.wav"
+//}
+//"levi.gordead01"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/PlayerDead01.wav"
+//}
+//"levi.gordead02"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/PlayerDead03.wav"
+//}
+//"levi.gordead03"
+//{
+//	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+//	"pitch"			"PITCH_NORM"
+//
+//	"soundlevel"	"SNDLVL_TALKING"
+//
+//	"wave"			"*vo/npc/levi/PlayerDead06.wav"
+//}
+
+//ddawg
+
+"ddawg.hey01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_hi.wav"
+}
+"ddawg.brief01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_brief_1.wav"
+}
+"ddawg.brief02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_brief_2.wav"
+}
+"ddawg.cough01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_cough_1.wav"
+}
+"ddawg.cough02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_cough_2.wav"
+}
+"ddawg.no01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/dawg/dd_bye.wav"
+}
+
+//fanboy
+
+"fb.intro01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_intro_1.wav"
+}
+"fb.intro02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_intro_2.wav"
+}
+"fb.intro03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_intro_3.wav"
+}
+"fb.outro01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_outro_1.wav"
+}
+"fb.outro02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_outro_2.wav"
+}
+"fb.outro03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/fb_outro_3.wav"
+}
+"fb.radio01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*mod/fanboy/radio_2.wav"
+}

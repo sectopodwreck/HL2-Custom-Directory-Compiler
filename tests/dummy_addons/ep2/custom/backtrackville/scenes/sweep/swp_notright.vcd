@@ -1,0 +1,134 @@
+// Choreo version 1
+event section "pause1"
+{
+  time 2.500000 -1.000000
+  param "noaction"
+}
+event section "pause2"
+{
+  time 8.000000 -1.000000
+  param "noaction"
+}
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.notright1"
+    {
+      time 3.840000 5.639546
+      param "swp.notright1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.notright2"
+    {
+      time 8.560000 10.138957
+      param "swp.notright2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event moveto "Moveto !player"
+    {
+      time 0.000000 2.500000
+      param "!player"
+      param2 "Run"
+      resumecondition
+      distancetotarget 128.00
+    }
+    event moveto "Moveto !target1"
+    {
+      time 6.000000 8.000000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+      distancetotarget 32.00
+    }
+    event moveto "Moveto !player"
+    {
+      time 2.500000 5.753333
+      param "!player"
+      distancetotarget 128.00
+    }
+    event moveto "Moveto !target1"
+    {
+      time 8.000000 10.500000
+      param "!target1"
+      distancetotarget 32.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 2.920001 3.420001
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 1.500000 2.500000
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 8.060000 10.560000
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "hg_headup"
+    {
+      time 2.560000 6.306665
+      param "hg_headup"
+      absolutetags playback_time
+      {
+        "apex" 0.162497
+        "extreme" 0.270829
+        "loop" 0.315967
+        "end" 0.772242
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.264706
+        "extreme" 0.441176
+        "loop" 0.514706
+        "end" 0.661765
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 1.500000 2.500000
+      param "!player"
+    }
+    event face "Face !player"
+    {
+      time 8.060000 10.560000
+      param "!player"
+    }
+  }
+  channel "events"
+  {
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

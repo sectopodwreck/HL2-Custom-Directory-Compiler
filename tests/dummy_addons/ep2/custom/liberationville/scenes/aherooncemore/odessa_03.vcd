@@ -1,0 +1,75 @@
+// Choreo version 1
+actor "odessa"
+{
+  channel "audio"
+  {
+    event speak "odessa.nlo_cub_service"
+    {
+      time 0.713333 4.067822
+      param "odessa.nlo_cub_service"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_present"
+    {
+      time 0.640000 3.273334
+      param "g_present"
+      absolutetags playback_time
+      {
+        "apex" 0.192308
+        "accent" 0.474359
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.192308
+        "accent" 0.474359
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.279999 4.839998
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 0.559999 4.686666
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+  }
+  channel "moveto"
+  {
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,353 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+"oa.bt1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt1.wav"
+}
+"oa.bt2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt2.wav"
+}
+"oa.bt3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt3.wav"
+}
+"oa.bt4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt4.wav"
+}
+"oa.bt5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt5.wav"
+}
+"oa.bt6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_bt6.wav"
+}
+"oa.btintro1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro1.wav"
+}
+"oa.btintro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro2.wav"
+}
+"oa.btintro3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro3.wav"
+}
+"oa.btintro4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro4.wav"
+}
+"oa.btintro5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro5.wav"
+}
+"oa.btintro6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_btintro6.wav"
+}
+"oa.comeon"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_comeon.wav"
+}
+"oa.ending1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_ending1.wav"
+}
+"oa.ending2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_ending2.wav"
+}
+"oa.ending3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_ending3.wav"
+}
+"oa.followme"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_followme.wav"
+}
+"oa.getontrain1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_getontrain1.wav"
+}
+"oa.getontrain2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_getontrain2.wav"
+}
+"oa.intro1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro1.wav"
+}
+"oa.intro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro2.wav"
+}
+"oa.intro3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro3.wav"
+}
+"oa.intro4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro4.wav"
+}
+"oa.intro5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro5.wav"
+}
+"oa.intro6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro6.wav"
+}
+"oa.intro7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro7.wav"
+}
+"oa.intro8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_intro8.wav"
+}
+"oa.notvolunteer"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_notvolunteer.wav"
+}
+"oa.overhere"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_overhere.wav"
+}
+"oa.snintro1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_snintro1.wav"
+}
+"oa.snintro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_snintro2.wav"
+}
+"oa.snintro3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_snintro3.wav"
+}
+"oa.snintro4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/oa_snintro4.wav"
+}
+"oa.taunt1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_taunt1.wav"
+}
+"oa.taunt2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_taunt2.wav"
+}
+"oa.taunt3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_taunt3.wav"
+}
+"oa.train1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/oa_train1.wav"
+}
+"oa.overwatchvoice"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"@npc/overwatch/cityvoice/f_anticivilevidence_3_spkr.wav"
+}

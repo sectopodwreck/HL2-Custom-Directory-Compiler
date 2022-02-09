@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "speech"
+  {
+    event speak "nexus.ba_illopenthis"
+    {
+      time 0.626667 2.209071
+      param "nexus.ba_illopenthis"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.080000 3.466667
+      param "!player"
+      event_ramp
+      {
+        0.0220 0.0000
+        0.5060 1.0000
+        2.8760 1.0000
+      }
+      lockbodyfacing
+    }
+    event lookat "Look at !player"
+    {
+      time 0.100001 3.466666
+      param "!player"
+      event_ramp
+      {
+        0.0200 0.0000
+        0.4960 1.0000
+        2.8593 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

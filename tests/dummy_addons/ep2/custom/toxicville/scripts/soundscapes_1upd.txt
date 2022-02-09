@@ -1,0 +1,517 @@
+// Based heavily on the soundscapes from Shadow Walker
+
+"nuclear.util_tone"
+{
+	"dsp"	"1"
+
+	// This is the ominous tone that plays in Ravenholm. It might not fit the scene; consider for deletion
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"ambient/atmosphere/tone_alley.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+}
+
+// Spooky, gross, and unsettling
+"nuclear.slime"
+{
+	"dsp"	"3"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"volume"	"1.0"
+	}
+
+}
+
+// Similar to "eli_01_lowerlab_hall_1"
+// Removed human sounds
+// NOTE: Use this for room with vent and goo
+"nuclear.util_lowerlab_hall"
+{
+	"dsp"	"5"
+
+	// outside lab hall
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/atmosphere/tunnel1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	// position0 - engine room
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/atmosphere/engine_room.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+		"position"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"	"1.0, 5.0"
+		"volume"	"0.04,0.1"
+		"pitch"	"80,120"
+		"position"	"0"	
+		"rndwave"
+		{
+			"wave"	"ambient/materials/metal_rattle1.wav"
+			"wave"	"ambient/materials/metal_rattle3.wav"
+			"wave"	"ambient/materials/metal_rattle4.wav"
+			
+			// Should these be here?
+			"wave"	"ambient/water/rain_drip1.wav"
+			"wave"	"ambient/water/rain_drip2.wav"
+			"wave"	"ambient/water/rain_drip3.wav"
+		}
+	}
+
+}
+
+
+"nuclear.util_metallic_ambiance"
+{
+	"playrandom"
+	{
+		"time"	"1.0, 5.0"
+		"volume"	"0.04,0.1"
+		"pitch"	"80,120"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"ambient/materials/metal_rattle1.wav"
+			"wave"	"ambient/materials/metal_rattle3.wav"
+			"wave"	"ambient/materials/metal_rattle4.wav"
+
+			"wave" "ambient/atmosphere/cave_hit1.wav"
+			"wave" "ambient/atmosphere/cave_hit2.wav"			
+			"wave" "ambient/atmosphere/cave_hit3.wav"
+			"wave" "ambient/atmosphere/cave_hit4.wav"
+			"wave" "ambient/atmosphere/cave_hit5.wav"
+			"wave" "ambient/atmosphere/cave_hit6.wav"
+			
+			"wave"	"ambient/atmosphere/hole_hit1.wav"
+			"wave"	"ambient/atmosphere/hole_hit2.wav"
+			"wave"	"ambient/atmosphere/hole_hit3.wav"
+			"wave"	"ambient/atmosphere/hole_hit4.wav"
+			"wave"	"ambient/atmosphere/hole_hit5.wav"
+			"wave"	"ambient/atmosphere/metallic1.wav"
+			"wave"	"ambient/atmosphere/metallic2.wav"
+			
+			"wave" "ambient/materials/vent_scurry_medium.wav"
+		}
+	}
+
+}
+
+// Similar to "eli_01_lower_corridor_1"
+"nuclear.util_lower_corridor"
+{
+	"dsp"	"3"
+
+	// lower hallway 1
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/ambience5.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+// Dripping water
+// Ominous ambience
+"nuclear.util_drips"
+{
+	"dsp"	"18" // Concrete small
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_90dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"pitch"		"140"
+		"soundlevel"	"SNDLVL_90dB"
+	}
+
+	
+}
+
+// Larger, open space
+// Fan running
+// Possibly drips / metal sounds?
+"nuclear.util_chamber"
+{
+	"dsp"	"10" // large chamber ; should create the echoes
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+}
+
+// Vent ambience
+"nuclear.util_vent"
+{
+	"dsp"	"2"
+	
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/machines/city_ventpump_loop1.wav"
+	}
+
+}
+
+// play when inside concrete room
+"nuclear.util_concreteroom"
+{
+	"dsp"	"1"
+
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_140dB"
+		"wave"		"ambient/atmosphere/underground_hall_loop1.wav"
+	}
+}
+
+
+// This soundscape is the prison cell where the player begins the map.
+"nuclear.prison_cells"
+{
+	"dsp"	"17" // concrete small
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.drip_room"
+{
+	"dsp"	"18" // concrete medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_drips"
+		"volume"	"1.0"
+	}
+	
+	
+
+}
+
+
+"nuclear.fighting_hallway"
+{
+	"dsp"	"6" // Tunnel Medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.ladder_room"
+{
+	"dsp"	"17" // Tunnel Medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.goo_hallway_clear"
+{
+	"dsp"	"17" // Tunnel Medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.goo_hallway"
+{
+	"dsp"	"17" // Tunnel Medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.slime"
+		"volume"	"1.0"
+	}
+
+}
+
+// TODO Add wind / echo sounds
+"nuclear.bridge"
+{
+	"dsp"	"5" // Tunnel small
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.goo_spill_room"
+{
+	"dsp"	"9" 
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.slime"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.goo_spill_room_clear"
+{
+	"dsp"	"9" 
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.hazard_airlock"
+{
+	"dsp"	"6" // Tunnel medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+	
+		"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/gas/steam_loop1.wav"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.slime"
+		"volume"	"1.0"
+	}
+
+}
+
+"nuclear.combat_room"
+{
+	"dsp"	"18"
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+	
+}
+
+"nuclear.reservoir"
+{
+	"dsp"	"17"
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.slime"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_drips"
+		"volume"	"1.0"
+	}	
+	
+	
+}
+
+// Add beeping, fan sounds, distant slime
+"nuclear.control_room"
+{
+	"dsp"	"18"
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_concreteroom"
+		"volume"	"1.0"
+	}
+	
+}
+
+// Add beeping, fan sounds, distant slime
+"nuclear.central_chamber"
+{
+	"dsp"	"18"
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_chamber"
+		"volume"	"1.0"
+	}
+
+	
+		"playsoundscape"
+	{
+		"name"		"nuclear.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.slime"
+		"volume"	"1.0"
+	}
+	
+}
+
+
+
+// This soundscape is a small tunnel with two airlock doors. There may be a slight flourescent hum. Very quiet
+"nuclear.entrance"
+{
+	"dsp"	"3" // medium metal; should create a metallic echo
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+
+}
+
+
+
+
+
+
+// More constricted than the lobby
+// More hollow sounds
+// Air flow
+"nuclear.ramp"
+{
+	"dsp"	"6" // tunnel medium // I want some echo and airflow but more of a concrete sound
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+		"playlooping" // Pipe airflow sound
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/pipe1.wav"
+	}
+	
+}
+
+"nuclear.outflow"
+{
+	"dsp"	"7" // Tunnel Medium
+
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_lower_corridor"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"nuclear.util_tone"
+		"volume"	"1.0"
+	}
+
+}
+
+
+
+// Similar to entrance but hollower.
+// Should feel cold.
+"nuclear.airlock"
+{
+	"dsp"	"6" // Tunnel medium
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+	
+		"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/gas/steam_loop1.wav"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+	}
+
+}
+
+
+
+

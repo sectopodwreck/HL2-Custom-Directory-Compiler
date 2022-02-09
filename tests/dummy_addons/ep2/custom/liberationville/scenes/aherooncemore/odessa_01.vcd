@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "odessa"
+{
+  channel "audio"
+  {
+    event speak "odessa.nlo_cub_hello"
+    {
+      time 4.413334 6.828504
+      param "odessa.nlo_cub_hello"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "odessa.nlo_cub_thatsthat"
+    {
+      time 0.620000 2.562630
+      param "odessa.nlo_cub_thatsthat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_noway_big"
+    {
+      time 0.700001 2.933334
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "G_look"
+    {
+      time 4.460001 6.426667
+      param "G_look"
+      absolutetags playback_time
+      {
+        "apex" 0.172414
+        "accent" 0.258621
+        "loop" 0.344828
+        "end" 0.517241
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "accent" 0.258621
+        "loop" 0.344828
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 3.713333 7.219998
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 4.273333 6.673332
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,68 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 8.500000 -1.000000
+  param "7.000000"
+  loopcount "-1"
+}
+actor "gman"
+{
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.000000 10.000000
+      param "!player"
+    }
+  }
+  channel "facing"
+  {
+    event face "Face !target1"
+    {
+      time 0.000000 10.000000
+      param "!target1"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_tiefidget"
+    {
+      time 3.000000 5.966667
+      param "G_tiefidget"
+      absolutetags playback_time
+      {
+        "apex" 0.238636
+        "accent" 0.468636
+        "loop" 0.478636
+        "end" 0.488636
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.238636
+        "accent" 0.477273
+        "loop" 0.488636
+        "end" 0.488636
+      }
+    }
+  }
+  channel "trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 2.000000 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

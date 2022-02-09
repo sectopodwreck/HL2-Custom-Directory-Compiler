@@ -1,0 +1,164 @@
+// Choreo version 1
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.afteryou"
+    {
+      time 0.193333 1.365941
+      param "swp.afteryou"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.astheysay1"
+    {
+      time 1.573333 4.034648
+      param "swp.astheysay1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.astheysay2"
+    {
+      time 4.220000 7.064445
+      param "swp.astheysay2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.beastreturns"
+    {
+      time 7.180000 8.909886
+      param "swp.beastreturns"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.coverburrows"
+    {
+      time 9.060000 11.672245
+      param "swp.coverburrows"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.heretheycome"
+    {
+      time 11.780001 12.766849
+      param "swp.heretheycome"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.notright1"
+    {
+      time 12.913334 14.712880
+      param "swp.notright1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.notright2"
+    {
+      time 14.840000 16.418957
+      param "swp.notright2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.outro1a"
+    {
+      time 16.586666 18.084352
+      param "swp.outro1a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.outro1b"
+    {
+      time 18.200001 20.475555
+      param "swp.outro1b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.outro2"
+    {
+      time 20.600000 24.175873
+      param "swp.outro2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.outro3a"
+    {
+      time 24.320000 25.736418
+      param "swp.outro3a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.outro3b"
+    {
+      time 25.900000 27.235147
+      param "swp.outro3b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.thatwasclose"
+    {
+      time 27.406666 29.055283
+      param "swp.thatwasclose"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.tracks"
+    {
+      time 29.213335 31.105761
+      param "swp.tracks"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.turncrank"
+    {
+      time 31.220001 33.541996
+      param "swp.turncrank"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.unwise"
+    {
+      time 33.733334 35.625759
+      param "swp.unwise"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "swp.watchout"
+    {
+      time 35.753334 36.658913
+      param "swp.watchout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

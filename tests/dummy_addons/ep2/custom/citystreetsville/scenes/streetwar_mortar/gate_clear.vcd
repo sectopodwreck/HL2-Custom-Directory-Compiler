@@ -1,0 +1,162 @@
+// Choreo version 1
+actor "Barney"
+{
+  channel "audio"
+  {
+    event speak "ep_01.ba_asskicking"
+    {
+      time 0.078947 2.390421
+      param "ep_01.ba_asskicking"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_01.ba_comeon01"
+    {
+      time 2.543860 3.076445
+      param "ep_01.ba_comeon01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "nexus.ba_followme01"
+    {
+      time 3.280702 4.447913
+      param "nexus.ba_followme01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.087720 4.526316
+      param "!player"
+    }
+  }
+  channel "move to "
+  {
+    event moveto "Moveto !player"
+    {
+      time 1.170100 3.187643
+      param "!player"
+    }
+  }
+  channel "face to"
+  {
+    event face "Face !player"
+    {
+      time 0.035089 4.491229
+      param "!player"
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "postures"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "Gesture_salute"
+    {
+      time 0.289855 3.256522
+      param "Gesture_salute"
+      absolutetags playback_time
+      {
+        "apex" 0.113636
+        "accent" 0.965909
+        "loop" 0.977273
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.113636
+        "accent" 0.965909
+        "loop" 0.977273
+        "end" 1.000000
+      }
+      sequenceduration 2.966667
+    }
+  }
+  channel "trigger"
+  {
+  }
+  channel "flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.036232 1.318840
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2319 1.0000
+        }
+        {
+          0.2319 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2319 0.0000
+        }
+        "dilator" 
+        {
+          0.2319 0.0000
+        }
+        "corner_puller" combo 
+        {
+          0.2319 0.9600
+        }
+        {
+          0.2319 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.2319 0.0000
+        }
+        "funneler" combo range 0.0 2.0 
+        {
+          0.2319 0.2400
+        }
+        {
+          0.2319 0.5000
+        }
+        "sneer_left" 
+        {
+          0.2319 0.5400
+        }
+        "dimpler" combo 
+        {
+          0.2319 0.0400
+        }
+        {
+          0.2319 0.5000
+        }
+        "cheek_puffer" combo 
+        {
+          0.2319 0.0000
+        }
+        {
+          0.2319 0.5000
+        }
+      }
+    }
+  }
+}
+
+mapname "maps\klab_actormarks.bsp"
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "50"
+  "RampTool" "38"
+  "ExpressionTool" "40"
+  "CChoreoView" "92"
+}
+fps 60
+snap off
+ignorePhonemes off

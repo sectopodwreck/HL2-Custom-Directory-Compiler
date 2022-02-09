@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "speech"
+  {
+    event speak "ep1_citizen.cit_heyoverhere"
+    {
+      time 0.240000 1.637551
+      param "ep1_citizen.cit_heyoverhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.040000 1.653334
+      param "!player"
+      event_ramp
+      {
+        0.0040 0.0000
+        0.4680 1.0000
+        1.4980 1.0000
+      }
+      lockbodyfacing
+    }
+    event lookat "Look at !player"
+    {
+      time 0.026667 1.660000
+      param "!player"
+      event_ramp
+      {
+        0.0120 0.0000
+        0.4960 1.0000
+        1.4940 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

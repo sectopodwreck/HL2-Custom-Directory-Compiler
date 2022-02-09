@@ -1,0 +1,36 @@
+// Choreo version 1
+actor "dave1"
+{
+  channel "speech"
+  {
+    event speak "dave.line4"
+    {
+      time 0.040000 3.682449
+      param "dave.line4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,92 @@
+// Choreo version 1
+event section "pause"
+{
+  time 1.000000 -1.000000
+  param "noaction"
+}
+actor "odessa1"
+{
+  channel "voice"
+  {
+    event speak "oa_notvolunteer.wav"
+    {
+      time 1.500000 6.085941
+      param "oa.notvolunteer"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "movement"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.000000 1.000000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "facing"
+  {
+    event face "Face !target2"
+    {
+      time 1.017857 3.128333
+      param "!target2"
+    }
+    event face "Face !player"
+    {
+      time 3.131411 6.179030
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "hg_headshake"
+    {
+      time 1.452839 3.086172
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 3.119505 6.190934
+      param "!player"
+    }
+    event lookat "Look at !target2"
+    {
+      time 1.024268 3.107601
+      param "!target2"
+    }
+  }
+  faceposermodel "models\odessa.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "112"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

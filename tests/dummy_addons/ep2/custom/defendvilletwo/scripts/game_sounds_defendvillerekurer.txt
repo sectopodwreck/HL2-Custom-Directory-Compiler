@@ -1,0 +1,26 @@
+"Prisoner1.LetUsOut"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"		"defendville/letusout.wav"
+}
+
+"Prisoner1.Building"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"defendville/defendville_buildingacrosstheroad.wav"
+}
+
+"Radio.Intro"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"defendville/defendville_radioinstructions.wav"
+}

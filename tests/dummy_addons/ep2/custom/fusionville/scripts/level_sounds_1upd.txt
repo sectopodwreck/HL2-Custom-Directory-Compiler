@@ -1,0 +1,347 @@
+"1upd.frederick.01.Captured.45"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/01_Captured_45.wav"
+}
+
+"1upd.frederick.02.PushButton.45"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/02_PushButton_45.wav"
+}
+
+"1upd.frederick.03.Hub.65"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/03_Hub_65.wav"
+}
+
+"1upd.frederick.04.Facility.45"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/04_Facility_45.wav"
+}
+
+"1upd.frederick.05.Encrypted.65"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/05_Encrypted_65.wav"
+}
+
+"1upd.frederick.06.Leverage.60"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/06_Leverage_60.wav"
+}
+
+"1upd.frederick.07.Chance.60"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/07_Chance_60.wav"
+}
+
+"1upd.frederick.08.Redemption.55"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/08_Redemption_55.wav"
+}
+
+"1upd.frederick.09.Safer.75"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"vo/frederick/09_Safer_75.wav"
+}
+
+"1upd.malachi.01.Where.30"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/01_Where_30.wav"
+}
+"1upd.malachi.02.Explain.40"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/02_Explain_40.wav"
+}
+"1upd.malachi.03.Understand.35"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/03_Understand_35.wav"
+}
+"1upd.malachi.04.Mistake.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/04_Mistake_45.wav"
+}
+"1upd.malachi.05b.Soldiers.40"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/05b_Soldiers_40.wav"
+}
+"1upd.malachi.05.Soldiers.40"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/05_Soldiers_40.wav"
+}
+"1upd.malachi.05.Soldiers.55"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/05_Soldiers_55.wav"
+}
+"1upd.malachi.06.Trust.30"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/06_Trust_30.wav"
+}
+"1upd.malachi.07.TrustMe.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/07_TrustMe_45.wav"
+}
+"1upd.malachi.08.Chance.25"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/08_Chance_25.wav"
+}
+"1upd.malachi.09.GoodEvening.20"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/09_GoodEvening_20.wav"
+}
+"1upd.malachi.10.StillAlive.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/10_StillAlive_45.wav"
+}
+"1upd.malachi.11.RoomOnTheLeft.55"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/11_RoomOnTheLeft_55.wav"
+}
+"1upd.malachi.12.SoapBox.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/12_SoapBox_45.wav"
+}
+"1upd.malachi.13.CombineAuthority.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/13_CombineAuthority_45.wav"
+}
+"1upd.malachi.14.Limits.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/14_Limits_45.wav"
+}
+"1upd.malachi.15.Nemesis.35"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/15_Nemesis_35.wav"
+}
+"1upd.malachi.16.TooWell.30"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/16_TooWell_30.wav"
+}
+"1upd.malachi.17.Damage.40"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/17_Damage_40.wav"
+}
+"1upd.malachi.18.Accountable.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/18_Accountable_45.wav"
+}
+"1upd.malachi.19.Accountable.35"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/19_Accountable_35.wav"
+}
+"1upd.malachi.20.Allies.30"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/20_Allies_30.wav"
+}
+"1upd.malachi.21.Leaving.15"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/21_Leaving_15.wav"
+}
+"1upd.malachi.22.YouWin.15"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/22_YouWin_15.wav"
+}
+"1upd.malachi.23.Coordinates.45"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/23_Coordinates_45.wav"
+}
+"1upd.malachi.24.OtherAgent.40"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/24_OtherAgent_40.wav"
+}
+"1upd.malachi.25.GetOut.20"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/25_GetOut_20.wav"
+}
+"1upd.malachi.26.YouWontHearFromMe.25"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/26_YouWontHearFromMe_25.wav"
+}
+"1upd.malachi.27.Goodbye.10"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/27_Goodbye_10.wav"
+}
+"1upd.malachi.level.sounds.1upd"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/level_sounds_1upd.py"
+}
+"1upd.malachi.level.sounds.malachi"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"vo/malachi/level_sounds_malachi.txt"
+}

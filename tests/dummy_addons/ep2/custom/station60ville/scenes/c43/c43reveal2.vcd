@@ -1,0 +1,94 @@
+// Choreo version 1
+event section "pause1"
+{
+  time 5.000000 -1.000000
+  param "noaction"
+}
+event section "pause"
+{
+  time 1.000000 -1.000000
+  param "noaction"
+}
+actor "combine1"
+{
+  channel "voice"
+  {
+    event speak "c43.turnoff"
+    {
+      time 1.500000 2.893197
+      param "c43.turnoff"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.000000 5.000000
+      param "!target1"
+    }
+  }
+  channel "facing"
+  {
+    event face "Face !target1"
+    {
+      time 0.000000 5.000000
+      param "!target1"
+    }
+  }
+  channel "movement"
+  {
+    event moveto "Moveto !target2"
+    {
+      time 0.000000 3.000000
+      param "!target2"
+      param2 "Walk"
+      resumecondition
+    }
+  }
+  faceposermodel "models\combine_soldier.mdl"
+}
+
+actor "combine2"
+{
+  channel "movement"
+  {
+    event moveto "Moveto !target4"
+    {
+      time 3.240741 5.000000
+      param "!target4"
+      param2 "Walk"
+      resumecondition
+    }
+    event moveto "Moveto !target3"
+    {
+      time 0.000000 3.000000
+      param "!target3"
+      param2 "Walk"
+      resumecondition
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.000000 5.000000
+      param "!target1"
+    }
+  }
+  faceposermodel "models\combine_soldier.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

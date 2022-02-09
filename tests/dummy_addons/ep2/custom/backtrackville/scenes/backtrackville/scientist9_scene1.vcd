@@ -1,0 +1,140 @@
+// Choreo version 1
+actor "scientist9"
+{
+  channel "speech"
+  {
+    event speak "npc_citizen.abouttime02"
+    {
+      time 0.040000 3.891610
+      param "npc_citizen.abouttime02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_citizen.readywhenyouare02"
+    {
+      time 5.453333 6.360408
+      param "npc_citizen.readywhenyouare02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_openarms"
+    {
+      time 1.106667 3.206666
+      param "g_openarms"
+      absolutetags playback_time
+      {
+        "apex" 0.160998
+        "accent" 0.338095
+        "loop" 0.804989
+        "end" 0.837188
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.142857
+        "accent" 0.300000
+        "loop" 0.714286
+        "end" 0.742857
+      }
+      sequenceduration 2.366667
+    }
+    event gesture "g_fist_swing_across"
+    {
+      time 2.240000 4.540000
+      param "g_fist_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "g_rarmpump"
+    {
+      time 5.060001 7.360001
+      param "g_rarmpump"
+      absolutetags playback_time
+      {
+        "apex" 0.220588
+        "accent" 0.367647
+        "loop" 0.676471
+        "end" 0.735294
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.220588
+        "accent" 0.367647
+        "loop" 0.676471
+        "end" 0.735294
+      }
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.040000 4.840001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_puller" combo 
+        {
+          0.0640 0.0000
+          1.0180 0.4100
+          3.8533 0.4300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.040000 4.686667
+      param "!player"
+      event_ramp
+      {
+        0.0240 0.0000
+        0.5160 1.0000
+        4.3027 1.0000
+      }
+    }
+    event face "Face !player"
+    {
+      time 0.059999 4.433333
+      param "!player"
+    }
+    event face "Face scientist9_target1"
+    {
+      time 4.433334 7.346668
+      param "scientist9_target1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

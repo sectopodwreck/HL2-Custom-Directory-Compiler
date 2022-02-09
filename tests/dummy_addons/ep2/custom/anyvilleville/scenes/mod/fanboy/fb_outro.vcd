@@ -1,0 +1,148 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "vo"
+  {
+    event speak "fb.outro01"
+    {
+      time 0.300000 5.123810
+      param "fb.outro01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "fb.outro02"
+    {
+      time 5.446667 7.133334
+      param "fb.outro02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.166667 7.240000
+      param "!player"
+      event_ramp
+      {
+        0.1583 0.8333
+        6.5667 0.6923
+      }
+    }
+  }
+  channel "faceto"
+  {
+    event face "Face !player"
+    {
+      time 0.166666 7.300000
+      param "!player"
+      event_ramp
+      {
+        0.2160 0.8333
+        6.8250 0.8333
+      }
+      lockbodyfacing
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_rarmpump"
+    {
+      time 0.293333 2.593333
+      param "g_rarmpump"
+      absolutetags playback_time
+      {
+        "apex" 0.220588
+        "accent" 0.367647
+        "loop" 0.676471
+        "end" 0.735294
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.220588
+        "accent" 0.367647
+        "loop" 0.676471
+        "end" 0.735294
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "g_armsout_high"
+    {
+      time 3.346666 5.353333
+      param "g_armsout_high"
+      absolutetags playback_time
+      {
+        "apex" 0.151201
+        "accent" 0.319201
+        "loop" 0.437431
+        "end" 0.603544
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.102273
+        "accent" 0.215909
+        "loop" 0.420455
+        "end" 0.761364
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "g_pumplow"
+    {
+      time 5.120001 7.253334
+      param "g_pumplow"
+      absolutetags playback_time
+      {
+        "apex" 0.238095
+        "accent" 0.884762
+        "loop" 0.894762
+        "end" 0.904762
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.238095
+        "accent" 0.904762
+        "loop" 0.904762
+        "end" 0.904762
+      }
+      sequenceduration 2.133333
+    }
+    event gesture "g_righthand_flick"
+    {
+      time 2.670000 4.303333
+      param "g_righthand_flick"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "accent" 0.354167
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "accent" 0.354167
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "moveto"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "24"
+  "ExpressionTool" "100"
+  "GestureTool" "54"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

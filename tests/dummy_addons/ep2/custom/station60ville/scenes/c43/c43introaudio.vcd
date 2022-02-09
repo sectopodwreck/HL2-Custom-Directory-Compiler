@@ -1,0 +1,153 @@
+// Choreo version 1
+event stoppoint "completion"
+{
+  time 27.500000 -1.000000
+  param "noaction"
+}
+actor "coltonradio"
+{
+  channel "voice"
+  {
+    event speak "c43.introa1"
+    {
+      time 0.000000 0.488481
+      param "c43.introa1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa2"
+    {
+      time 0.766667 1.247959
+      param "c43.introa2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa3"
+    {
+      time 1.786667 2.900091
+      param "c43.introa3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa4"
+    {
+      time 3.866667 5.382381
+      param "c43.introa4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa5"
+    {
+      time 5.840000 7.420363
+      param "c43.introa5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa6"
+    {
+      time 8.486668 11.331316
+      param "c43.introa6"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa7"
+    {
+      time 11.986666 12.827142
+      param "c43.introa7"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa8"
+    {
+      time 13.213334 14.527892
+      param "c43.introa8"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa9"
+    {
+      time 14.993336 16.746101
+      param "c43.introa9"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa10"
+    {
+      time 17.506668 18.921793
+      param "c43.introa10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa11"
+    {
+      time 19.113333 19.666462
+      param "c43.introa11"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa12"
+    {
+      time 19.780003 20.900616
+      param "c43.introa12"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa13"
+    {
+      time 21.753330 22.220247
+      param "c43.introa13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa14"
+    {
+      time 22.826670 24.859594
+      param "c43.introa14"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa15"
+    {
+      time 26.086666 26.453014
+      param "c43.introa15"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "c43.introa16"
+    {
+      time 26.500002 27.397938
+      param "c43.introa16"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\group03\male_02.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "8"
+  "CChoreoView" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

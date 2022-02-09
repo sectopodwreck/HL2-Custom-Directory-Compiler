@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "wounded"
+{
+  channel "vo"
+  {
+    event speak "ep_02.griggs_coming01"
+    {
+      time 0.086666 1.196779
+      param "ep_02.griggs_coming01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_02.griggs_whysomany"
+    {
+      time 2.086667 3.964014
+      param "ep_02.griggs_whysomany"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_02.griggs_betweenwave_03"
+    {
+      time 5.020001 7.452019
+      param "ep_02.griggs_betweenwave_03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep1_citizen.cit_pain02"
+    {
+      time 3.980000 4.751043
+      param "ep1_citizen.cit_pain08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.073333 1.346666
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 1.940000 3.893333
+      param "!player"
+    }
+  }
+  channel "gest"
+  {
+    event gesture "hg_headshake"
+    {
+      time 5.286667 6.920000
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "124"
+}
+fps 60
+snap off
+ignorePhonemes off

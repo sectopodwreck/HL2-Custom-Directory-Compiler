@@ -1,0 +1,83 @@
+// Choreo version 1
+event section "pause"
+{
+  time 2.000000 -1.000000
+  param "noaction"
+}
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.afteryou"
+    {
+      time 2.620000 3.792608
+      param "swp.afteryou"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.000000 2.000000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+      distancetotarget 32.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 2.000000 4.500000
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 2.000000 4.500000
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_cross_palmout_left"
+    {
+      time 2.086666 4.386666
+      param "g_cross_palmout_left"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.632353
+        "loop" 0.882353
+        "end" 0.897059
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.632353
+        "loop" 0.882353
+        "end" 0.897059
+      }
+      sequenceduration 2.300000
+    }
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

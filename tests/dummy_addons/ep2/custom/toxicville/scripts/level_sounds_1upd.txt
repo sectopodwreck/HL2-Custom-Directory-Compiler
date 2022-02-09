@@ -1,0 +1,87 @@
+"1upd.bad_cop.he_tried_to_steal_our_plans"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/badcop/hetriedtostealourplans.wav"
+}
+
+"1upd.bad_cop.what_do_we_do_with_the_prisoner"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/badcop/whatdowedowiththeprisoner.wav"
+}
+
+"1upd.good_cop.cant_shoot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/goodcop/cantshoot.wav"
+}
+
+"1upd.good_cop.well_hes_obviously_not_with_the_combine"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/goodcop/wellhesobviouslynotwiththecombine.wav"
+}
+
+"1upd.frederick.malachi"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/malachi.wav"
+}
+
+"1upd.frederick.stopyou"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/stopyou.wav"
+}
+
+"1upd.frederick.tellyou"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/tellyou.wav"
+}
+
+"1upd.frederick.trackingdevice"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/trackingdevice.wav"
+}

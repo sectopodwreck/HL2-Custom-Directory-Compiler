@@ -1,0 +1,25 @@
+// Choreo version 1
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.watchout"
+    {
+      time 0.000000 0.905578
+      param "swp.watchout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,75 @@
+// Choreo version 1
+actor "outro_prisoner01"
+{
+  channel "audio"
+  {
+    event speak "ep1_citizen.cit_getaboard01"
+    {
+      time 0.182540 1.819320
+      param "ep1_citizen.cit_getaboard01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep1_citizen.cit_getaboard02"
+    {
+      time 1.968254 3.059433
+      param "ep1_citizen.cit_getaboard02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "b_OverHere_Left"
+    {
+      time 0.198412 1.998412
+      param "b_OverHere_Left"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.125000 3.625000
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "trigger"
+  {
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "64"
+}
+fps 60
+snap off
+ignorePhonemes off

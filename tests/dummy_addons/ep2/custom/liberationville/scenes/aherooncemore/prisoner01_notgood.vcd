@@ -1,0 +1,53 @@
+// Choreo version 1
+actor "prisoner01"
+{
+  channel "audio"
+  {
+    event speak "opening.cit_window_use01"
+    {
+      time 0.226666 1.519364
+      param "opening.cit_window_use01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "opening.cit_tvbust05"
+    {
+      time 2.093334 4.843991
+      param "opening.cit_tvbust05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "flex"
+  {
+  }
+  channel "trigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

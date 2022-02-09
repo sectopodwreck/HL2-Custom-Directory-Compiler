@@ -1,0 +1,159 @@
+"arctic.interior"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/ambience5.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.kraken"
+{
+	"dsp"	"2"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\atmosphere\ambience6.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.interior_grav"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/ambience5.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.interior_zombies"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/ambience5.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+	
+		"playrandom"
+	{
+		"time"		"60, 300"
+		"volume"	"0.18,0.35"
+		"pitch"		"95,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/town_scared_sob1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing2.wav"
+			"wave"	"ambient/creatures/town_child_scream1.wav"
+			"wave"	"ambient/creatures/town_muffled_cry1.wav"
+			"wave"	"ambient/creatures/town_scared_sob2.wav"
+		}	
+	}
+
+}
+
+"arctic.teleporter"
+{
+	"dsp"	"18"
+
+	"playsoundscape"
+	{
+		"name"		"arctic.interior"
+		"volume"	"1.0"
+	}
+
+}
+
+
+"arctic.entrance"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\wind\wind1.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.mess_hall"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\wind\wind1.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.tent"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\wind\wind1.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"arctic.exterior_wind"
+{
+	"dsp"	"20"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\ambience\wind_light02_loop.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient\wind\windgust.wav"
+			"wave"	"ambient\wind\windgust_strong.wav"
+			"wave"	"ambient/wind/wind_snippet4.wav"
+			"wave"	"ambient/wind/wind_snippet5.wav"
+		}
+		
+	}
+
+}

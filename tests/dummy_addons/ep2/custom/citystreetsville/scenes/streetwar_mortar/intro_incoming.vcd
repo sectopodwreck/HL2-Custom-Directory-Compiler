@@ -1,0 +1,116 @@
+// Choreo version 1
+actor "Barney"
+{
+  channel "audio"
+  {
+    event speak "k_lab2.ba_incoming"
+    {
+      time 0.048600 2.481503
+      param "k_lab2.ba_incoming"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "k_lab2.ba_getgoing"
+    {
+      time 3.539394 5.362160
+      param "k_lab2.ba_getgoing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 3.127273 5.518182
+      param "!player"
+    }
+  }
+  channel "move to "
+  {
+  }
+  channel "face to"
+  {
+    event face "Face !player"
+    {
+      time 3.278788 5.439395
+      param "!player"
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "postures"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "g_KL2_LookUp"
+    {
+      time 0.012666 1.979333
+      param "g_KL2_LookUp"
+      absolutetags playback_time
+      {
+        "apex" 0.258621
+        "accent" 0.344828
+        "loop" 0.517241
+        "end" 0.689655
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.344828
+        "loop" 0.517241
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "g_KL2_Duck"
+    {
+      time 1.357391 4.069707
+      param "g_KL2_Duck"
+      absolutetags playback_time
+      {
+        "apex" 0.187523
+        "accent" 0.250030
+        "loop" 0.375045
+        "end" 0.657068
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.344828
+        "loop" 0.517241
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "body gestures"
+  {
+  }
+  channel "trigger"
+  {
+  }
+  channel "Head flex"
+  {
+  }
+  channel "Face flex"
+  {
+  }
+}
+
+mapname "maps\klab_actormarks.bsp"
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "50"
+  "RampTool" "36"
+  "ExpressionTool" "12"
+  "CChoreoView" "110"
+}
+fps 60
+snap off
+ignorePhonemes off

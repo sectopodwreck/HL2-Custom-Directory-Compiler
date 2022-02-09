@@ -1,0 +1,83 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 15.000000 -1.000000
+  param "0.000000"
+  loopcount "-1"
+}
+actor "odessa2"
+{
+  channel "voice"
+  {
+    event speak "oa_followme.wav"
+    {
+      time 0.000000 1.044898
+      param "oa.followme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "oa_overhere.wav"
+    {
+      time 5.000000 6.091338
+      param "oa.overhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "oa.comeon"
+    {
+      time 10.000000 11.149387
+      param "oa.comeon"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "triggers"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 1.193333 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 4.873333 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 6.220000 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 9.846667 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 11.306667 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 14.913334 -1.000000
+      param "2"
+    }
+  }
+  faceposermodel "models\odessa.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

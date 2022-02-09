@@ -1,0 +1,616 @@
+// Consider using d3_citadel.util_hits for the creature
+
+// A breezy fall morning
+"facility.outdoor"
+{
+	"dsp"	"1"
+
+	// This is the ominous tone that plays in Ravenholm. It might not fit the scene; consider for deletion
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"ambient/atmosphere/tone_alley.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	
+	// Bug sounds. Consider removal.
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_critters"
+		"volume"	"1.4"
+	}
+
+
+	// Wind blowing through trees
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_windgusts"
+		"volume"	"1.0"
+	}
+
+	// Wind moaning
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/wind/wind_moan1.wav"
+			"wave"	"ambient/wind/wind_moan2.wav"
+			"wave"	"ambient/wind/wind_snippet1.wav"
+			"wave"	"ambient/wind/wind_snippet2.wav"
+			"wave"	"ambient/wind/wind_moan4.wav"
+		}
+		
+	}
+
+}
+
+// Similar to "eli_01_lowerlab_hall_1"
+// Removed human sounds
+"facility.util_lowerlab_hall"
+{
+	"dsp"	"5"
+
+	// outside lab hall
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/atmosphere/tunnel1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	// position0 - engine room
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/atmosphere/engine_room.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+		"position"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"	"1.0, 5.0"
+		"volume"	"0.04,0.1"
+		"pitch"	"80,120"
+		"position"	"0"	
+		"rndwave"
+		{
+			"wave"	"ambient/materials/metal_rattle1.wav"
+			"wave"	"ambient/materials/metal_rattle3.wav"
+			"wave"	"ambient/materials/metal_rattle4.wav"
+			
+			// Should tehse be here?
+			"wave"	"ambient/water/rain_drip1.wav"
+			"wave"	"ambient/water/rain_drip2.wav"
+			"wave"	"ambient/water/rain_drip3.wav"
+		}
+	}
+
+}
+
+
+"facility.util_metallic_ambiance"
+{
+	"playrandom"
+	{
+		"time"	"1.0, 5.0"
+		"volume"	"0.04,0.1"
+		"pitch"	"80,120"
+		"position"	"random"	
+		"rndwave"
+		{
+			"wave"	"ambient/materials/metal_rattle1.wav"
+			"wave"	"ambient/materials/metal_rattle3.wav"
+			"wave"	"ambient/materials/metal_rattle4.wav"
+
+			"wave" "ambient/atmosphere/cave_hit1.wav"
+			"wave" "ambient/atmosphere/cave_hit2.wav"			
+			"wave" "ambient/atmosphere/cave_hit3.wav"
+			"wave" "ambient/atmosphere/cave_hit4.wav"
+			"wave" "ambient/atmosphere/cave_hit5.wav"
+			"wave" "ambient/atmosphere/cave_hit6.wav"
+			
+			"wave"	"ambient/atmosphere/hole_hit1.wav"
+			"wave"	"ambient/atmosphere/hole_hit2.wav"
+			"wave"	"ambient/atmosphere/hole_hit3.wav"
+			"wave"	"ambient/atmosphere/hole_hit4.wav"
+			"wave"	"ambient/atmosphere/hole_hit5.wav"
+			"wave"	"ambient/atmosphere/metallic1.wav"
+			"wave"	"ambient/atmosphere/metallic2.wav"
+			
+			"wave" "ambient/materials/vent_scurry_medium.wav"
+		}
+	}
+
+}
+
+// Similar to "eli_01_lower_corridor_1"
+"facility.util_lower_corridor"
+{
+	"dsp"	"3"
+
+	// lower hallway 1
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/ambience5.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+
+}
+
+"facility.util_screams"
+{
+	"playrandom"
+	{
+		"time"		"60, 300"
+		"volume"	"0.18,0.35"
+		"pitch"		"95,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/town_scared_sob1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing2.wav"
+			"wave"	"ambient/creatures/town_child_scream1.wav"
+			"wave"	"ambient/creatures/town_muffled_cry1.wav"
+			"wave"	"ambient/creatures/town_scared_sob2.wav"
+		}	
+	}
+
+}
+
+// This soundscape is a small tunnel with two airlock doors. There may be a slight flourescent hum. Very quiet
+"facility.entrance"
+{
+	"dsp"	"3" // medium metal; should create a metallic echo
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+
+}
+
+
+// Larger, open space
+// Fan running
+// Possibly drips / metal sounds?
+"facility.lobby"
+{
+	"dsp"	"10" // large chamber ; should create the echoes
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+}
+
+
+// More constricted than the lobby
+// More hollow sounds
+// Air flow
+"facility.ramp"
+{
+	"dsp"	"6" // tunnel medium // I want some echo and airflow but more of a concrete sound
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+		"playlooping" // Pipe airflow sound
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/pipe1.wav"
+	}
+	
+}
+
+
+// Tighter space
+// Muted alarm sound
+// Drips / water from bathroom
+"facility.office_hallway"
+{
+	"dsp"	"5" // Tunnel Small ; Hoping this will accomplish the desired effect of a tight, echo-y hallway
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+}
+
+// Dripping water
+// Ominous ambience
+"facility.bathroom"
+{
+	"dsp"	"18" // Concrete small
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_90dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"pitch"		"140"
+		"soundlevel"	"SNDLVL_90dB"
+	}
+
+	
+}
+
+// Flourescent hum / fan sounds from vending machine
+"facility.lounge"
+{
+	"dsp"	"1" // Normal ; no echo in this room
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lower_corridor"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"ambient/atmosphere/indoor2.wav"
+	}
+
+	
+}
+
+// Similar to entrance but hollower.
+// Should feel cold.
+"facility.airlock"
+{
+	"dsp"	"6" // Tunnel medium
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+	
+		"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/gas/steam_loop1.wav"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+	}
+
+}
+
+// Area around airlock. Much more mechanical / industrial than the rest of the facility
+// Quiet hum
+"facility.industrial"
+{
+	"dsp"	"9" // Chamber medium
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lowerlab_hall"
+		"volume"	"1.0"
+	}
+
+}
+
+// Bright flourescent lights
+// Metal rumbling
+// Scary ambience
+"facility.corridor"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"facility.util_lower_corridor"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}
+
+
+// Imagine what you would hear if you went down one of the holes in "The Enigma at Amigara Fault"
+// Dark, cold. Quiet but unsettling
+"facility.junjiito"
+{
+	"dsp"	"5"
+
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+	
+}
+
+
+// Sounds to play near portals to the upside-down.
+// Spooky, gross, and unsettling
+"facility.horror"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"facility.corridor"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"volume"	"1.0"
+	}
+
+}
+
+// Unfinished
+// Same as facility.corridor, but add more frequent screams
+"facility.corridor.deadend"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"facility.corridor"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"facility.util_screams"
+		"volume"	"1.0"
+	}
+
+}
+
+
+// Quiet lab.
+// Sets up glass breaking jump scare
+"facility.silent_lab"
+{
+	"dsp"	"17"
+
+
+}
+
+// Like the other corridor, but quieter
+"facility.corridor.scary"
+{
+	"dsp"	"3" // Metal medium
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/corridor.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}
+
+// Unfinished
+// Connecting hallways between rooms during the final chase scene
+"facility.creepy"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/corridor.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"facility.util_screams"
+		"volume"	"1.0"
+	}
+
+}
+
+// Pods gurgling near where the player gets the gun.
+"facility.pods"
+{
+	"dsp"	"17"
+
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+	
+	// lab ambience
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"	"ambient/atmosphere/captain_room.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+	
+	"playrandom"
+	{
+		"time"	"0.25, 2.0"
+		"volume"	"0.25,0.5"
+		"pitch"	"80,120"
+		"position"	"0"	
+		"rndwave"
+		{
+			"wave"	"physics/flesh/flesh_bloody_impact_hard1.wav"
+			"wave"	"physics/flesh/flesh_bloody_impact_hard1.wav"
+			"wave"	"physics/flesh/flesh_bloody_impact_hard1.wav"
+		}
+	}
+
+}
+
+// Computers beeping near final button
+"facility.security"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"ambient/machines/combine_terminal_loop1.wav"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_65db"
+		"position"	"1"
+	}
+
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.3,0.5"
+		"pitch"		"95,105"
+		"soundlevel" "SNDLVL_80db"
+		"position"	"1"
+		"rndwave"
+		{
+			"wave"	"ambient/machines/combine_terminal_idle1.wav"
+			"wave"	"ambient/machines/combine_terminal_idle2.wav"
+			"wave"	"ambient/machines/combine_terminal_idle3.wav"
+			"wave"	"ambient/machines/combine_terminal_idle4.wav"
+		}
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+	
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"	"ambient/levels/citadel/datatransmission01_loop.wav"
+		"pitch"		"100"
+		"attenuation"	"0.7"
+		"position"	"1"
+	}
+	
+}
+
+// Vent ambience
+"facility.vent"
+{
+	"dsp"	"2"
+	
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"	"ambient/machines/city_ventpump_loop1.wav"
+	}
+
+}
+
+// Storage room with boxes and computer parts
+"facility.storeroom"
+{
+	"dsp"	"17"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"	"ambient/atmosphere/ambience_base.wav"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}
+
+// Unfinished
+// Room where player finds a vent.
+// Should feel cold, big, and empty
+"facility.freezer"
+{
+	"dsp"	"17"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"	"ambient/atmosphere/ambience_base.wav"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}
+
+// Creepy rooms with medical equipment
+"facility.medical"
+{
+	"dsp"	"17"
+
+	// lab ambience
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"	"ambient/atmosphere/captain_room.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "facility.util_metallic_ambiance"
+		"volume"	"1.0"
+	}
+
+}

@@ -1,0 +1,114 @@
+
+"klems.main_cavern"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"
+	{
+		"name"		"ep2_caves.main_cavern"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d3_citadel.util_hits"
+		"volume"	"0.6"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_metalstress"
+		"volume"	"0.6"
+	}
+}
+
+"klems.main_cavern_highslime"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"
+	{
+		"name"		"klems.main_cavern"
+		"volume"	"0.8"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"volume"	"1.0"
+	}
+}
+
+"klems.main_cavern_lowslime"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"
+	{
+		"name"		"klems.main_cavern"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"volume"	"0.5"
+	}
+}
+
+"klems.outside"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"ambient/wind/wind_rooftop1.wav"
+		"pitch"		"110"
+		"attenuation"	"0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_windgusts"	
+		"volume"	"0.3"
+	}
+}
+
+"klems.cliffside"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"klems.outside"	
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_antlion_den"	
+		"volume"	"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"		"coast.util_crumblycliff"	
+		"volume"	"1.0"
+	}
+}
+
+"klems.inside"
+{
+	"playsoundscape"
+	{
+		"name"		"klems.outside"	
+		"volume"	"0.3"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\drone2lp.wav"
+	}
+}

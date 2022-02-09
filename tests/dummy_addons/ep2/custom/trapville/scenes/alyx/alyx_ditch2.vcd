@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_launch_copterworking04"
+    {
+      time 0.140000 2.065351
+      param "ep_02.al_launch_copterworking04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.020000 2.540000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          1.6609 0.0000
+          1.7625 0.6000
+          1.8391 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          0.0674 0.0000
+          0.3752 0.6300
+          2.2031 0.5600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.026667 2.546667
+      param "!player"
+      event_ramp
+      {
+        0.0180 0.0000
+        0.5120 1.0000
+        1.9940 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "128"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

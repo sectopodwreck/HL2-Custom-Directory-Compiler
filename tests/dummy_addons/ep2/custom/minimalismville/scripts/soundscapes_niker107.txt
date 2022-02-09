@@ -1,0 +1,39 @@
+"niker107_train"
+{
+	// "dsp" "1"
+	"PlayLooping"
+	{
+		"wave" "ambient\machines\razor_train_wheels_loop1.wav"
+		"volume" "0.6"
+		"pitch" "100"
+	}
+	"playrandom"
+	{
+		"volume"	"0.4,1"
+		"time"		"10, 40"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient\levels\outland\ol03_bincreak01.wav"
+			"wave"	"ambient\levels\outland\ol03_bincreak02.wav"
+			"wave"	"ambient\levels\outland\ol03_bincreak04.wav"
+			"wave"	"ambient\levels\outland\ol03_bincreak06.wav"
+			"wave"	"ambient\materials\shipgroan3.wav"
+			"wave"	"ambient\materials\shipgroan4.wav"
+		}
+	}
+	"playrandom"
+	{
+		"volume"	"0.4,1"
+		"time"		"3, 15"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient\wind\wind_hit1.wav"
+			"wave"	"ambient\wind\wind_hit2.wav"
+			"wave"	"ambient\wind\wind_hit3.wav"
+		}
+	}
+}

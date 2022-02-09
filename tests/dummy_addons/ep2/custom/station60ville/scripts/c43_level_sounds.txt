@@ -1,0 +1,454 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+"c43.intro1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro1.wav"
+}
+"c43.intro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro2.wav"
+}
+"c43.intro3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro3.wav"
+}
+"c43.intro4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro4.wav"
+}
+"c43.intro5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro5.wav"
+}
+"c43.intro6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro6.wav"
+}
+"c43.intro7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro7.wav"
+}
+"c43.intro8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro8.wav"
+}
+"c43.intro9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro9.wav"
+}
+"c43.intro10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro10.wav"
+}
+"c43.intro11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro11.wav"
+}
+"c43.intro12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro12.wav"
+}
+"c43.intro13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro13.wav"
+}
+"c43.intro14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro14.wav"
+}
+"c43.intro15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro15.wav"
+}
+"c43.intro16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43intro16.wav"
+}
+"c43.pickmeup1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43pickmeup1.wav"
+}
+"c43.pickmeup2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43pickmeup2.wav"
+}
+"c43.pickmeup3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43pickmeup3.wav"
+}
+"c43.pickmeup4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43pickmeup4.wav"
+}
+"c43.reveal1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal1.wav"
+}
+"c43.reveal2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal2.wav"
+}
+"c43.reveal3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal3.wav"
+}
+"c43.reveal4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal4.wav"
+}
+"c43.reveal5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal5.wav"
+}
+"c43.reveal6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal6.wav"
+}
+"c43.reveal7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal7.wav"
+}
+"c43.reveal8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal8.wav"
+}
+"c43.reveal9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal9.wav"
+}
+"c43.reveal10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal10.wav"
+}
+"c43.reveal11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43reveal11.wav"
+}
+"c43.turnoff"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"wave"			"*vo/c43/c43turnoff.wav"
+}
+
+"c43.introa1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro1.wav"
+}
+"c43.introa2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro2.wav"
+}
+"c43.introa3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro3.wav"
+}
+"c43.introa4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro4.wav"
+}
+"c43.introa5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro5.wav"
+}
+"c43.introa6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro6.wav"
+}
+"c43.introa7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro7.wav"
+}
+"c43.introa8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro8.wav"
+}
+"c43.introa9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro9.wav"
+}
+"c43.introa10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro10.wav"
+}
+"c43.introa11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro11.wav"
+}
+"c43.introa12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro12.wav"
+}
+"c43.introa13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro13.wav"
+}
+"c43.introa14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro14.wav"
+}
+"c43.introa15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro15.wav"
+}
+"c43.introa16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.2"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"			"*vo/c43/c43intro16.wav"
+}
+
+"c43.genstart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_70dB"
+	"pitch"			"95,105"
+
+	"wave"			"vehicles/airboat/fan_motor_start1.wav"
+}
+"c43.genidle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"100,160"
+
+	"soundlevel"	"SNDLVL_70dB"
+
+	"wave"			"vehicles/airboat/fan_motor_idle_loop1.wav"
+}

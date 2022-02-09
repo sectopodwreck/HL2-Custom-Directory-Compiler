@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "scientist5"
+{
+  channel "speech"
+  {
+    event speak "npc_citizen.hellodrfm02"
+    {
+      time 0.473333 1.261542
+      param "npc_citizen.hellodrfm02"
+      param2 "0.620"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.040000 1.640000
+      param "!player"
+      event_ramp
+      {
+        0.0240 0.0000
+        0.5160 1.0000
+        1.2560 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

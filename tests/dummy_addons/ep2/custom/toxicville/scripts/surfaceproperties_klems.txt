@@ -1,0 +1,12 @@
+
+"klems_flesh"
+{
+	"base" 			"alienflesh"
+	"density"		"400"
+	"friction" 		"0.8"
+	
+	"break"			"NPC_Antlion_Grub.Explode"
+
+	"gamematerial"	"-"
+	"jumpfactor" 	"1.4"
+}

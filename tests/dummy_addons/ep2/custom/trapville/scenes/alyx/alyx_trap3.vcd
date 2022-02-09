@@ -1,0 +1,182 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_ambush_power"
+    {
+      time 3.559999 5.714670
+      param "ep_02.al_ambush_power"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep_02.al_rad_powerlines"
+    {
+      time 0.473333 2.820000
+      param "ep_02.al_rad_powerlines"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "a_g_point"
+    {
+      time 1.500000 4.080000
+      param "a_g_point"
+      absolutetags playback_time
+      {
+        "in" 0.118473
+        "loop" 0.448062
+        "end" 0.636434
+        "out" 0.817830
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.169811
+        "loop" 0.471698
+        "end" 0.566038
+        "out" 0.716981
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "A_g_low2side_palmsout"
+    {
+      time 3.260000 5.960001
+      param "A_g_low2side_palmsout"
+      absolutetags playback_time
+      {
+        "apex" 0.150000
+        "accent" 0.300000
+        "loop" 0.475000
+        "end" 0.650000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.300000
+        "loop" 0.475000
+        "end" 0.650000
+      }
+      sequenceduration 2.700000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.080000 6.933333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.1509 0.0000
+          0.3811 0.6700
+          0.5283 0.0000
+          2.8566 0.0000
+          3.0283 0.6600
+          3.2358 0.0000
+          5.9340 0.0000
+          6.0679 0.6300
+          6.2811 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          2.9875 0.0000
+          3.6179 0.5900
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.0274 0.0000
+          0.4792 0.4800
+          2.7571 0.5900
+          3.4054 0.0700
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          2.7901 0.0000
+          3.7693 0.4500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event face "Face alyx_target1"
+    {
+      time 0.053333 1.899999
+      param "alyx_target1"
+      event_ramp
+      {
+        0.0660 0.0000
+        0.9358 1.0000
+        1.5573 1.0000
+      }
+    }
+    event face "Face alyx_target2"
+    {
+      time 1.560000 6.880000
+      param "alyx_target2"
+      event_ramp
+      {
+        0.0200 0.0000
+        0.5140 1.0000
+        4.7793 1.0000
+      }
+    }
+    event lookat "Look at alyx_target1"
+    {
+      time 0.066667 1.900000
+      param "alyx_target1"
+      event_ramp
+      {
+        0.0480 0.0000
+        0.9840 1.0000
+        1.5513 1.0000
+      }
+    }
+    event lookat "Look at alyx_target2"
+    {
+      time 1.560000 3.986667
+      param "alyx_target2"
+      event_ramp
+      {
+        0.0080 0.0000
+        0.5160 1.0000
+        1.8807 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 3.513333 6.906667
+      param "!player"
+      event_ramp
+      {
+        0.0200 0.0000
+        0.4980 1.0000
+        2.8713 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "106"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

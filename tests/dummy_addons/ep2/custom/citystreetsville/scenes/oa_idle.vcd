@@ -1,0 +1,59 @@
+// Choreo version 1
+event section "pause"
+{
+  time 1.000000 -1.000000
+  param "noaction"
+}
+event loop "loop"
+{
+  time 4.000000 -1.000000
+  param "2.000000"
+  loopcount "-1"
+}
+actor "odessa1"
+{
+  channel "movement"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.000000 1.000000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+      distancetotarget 8.00
+    }
+    event firetrigger "trigger"
+    {
+      time 1.500000 -1.000000
+      param "1"
+    }
+  }
+  channel "facing"
+  {
+    event face "Face !target2"
+    {
+      time 1.000000 5.000000
+      param "!target2"
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !target2"
+    {
+      time 1.000000 5.000000
+      param "!target2"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

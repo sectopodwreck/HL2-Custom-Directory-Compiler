@@ -1,0 +1,213 @@
+// Choreo version 1
+actor "prisoner01"
+{
+  channel "audio"
+  {
+    event speak "npc_citizen.no01"
+    {
+      time 1.033332 2.412675
+      param "npc_citizen.no01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "canals.massacre_runforyourlife01"
+    {
+      time 2.573332 4.230702
+      param "canals.massacre_runforyourlife01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.086667 5.760000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1467 0.5800
+          2.4667 1.0000
+          3.9733 0.5760
+        }
+        {
+          0.1467 0.5000
+          2.4667 0.5000
+          3.9733 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1467 0.9300
+          2.4667 1.0000
+          3.9733 0.5440
+          5.4707 0.0000
+        }
+        {
+          0.1467 0.5000
+          2.4667 0.5000
+          3.9733 0.5000
+          5.4707 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1467 0.0000
+          3.9733 0.0000
+        }
+        {
+          0.1467 0.5000
+          3.9733 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1467 0.3500
+          2.4667 1.0000
+          3.9733 0.5970
+          5.4707 1.0000
+        }
+        {
+          0.1467 0.5000
+          2.4667 0.5000
+          3.9733 0.5000
+          5.4707 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          3.9733 0.5600
+        }
+        {
+          3.9733 0.5000
+        }
+        "wrinkler" 
+        {
+          3.9733 1.0000
+          5.4707 1.0000
+        }
+        "dilator" 
+        {
+          3.9733 0.8900
+          5.4707 0.6600
+        }
+        "corner_depressor" combo 
+        {
+          0.1467 0.5000
+          2.4667 1.0000
+          3.9733 0.5833
+          5.4707 0.6800
+        }
+        {
+          0.1467 0.5000
+          2.4667 0.5000
+          3.9733 0.5000
+          5.4707 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1467 0.3800
+          2.4667 1.0000
+          3.9733 0.5942
+          5.4707 0.6800
+        }
+        "part" combo 
+        {
+          0.1467 0.6800
+          2.4667 1.0000
+          3.9733 0.5669
+          5.4707 0.2800
+        }
+        {
+          0.1467 0.5000
+          2.4667 0.5000
+          3.9733 0.5000
+          5.4707 0.5000
+        }
+        "jaw_clencher" 
+        {
+          3.9733 1.0000
+        }
+        "jaw_drop" 
+        {
+          3.9733 1.0000
+        }
+        "mouth_drop" combo 
+        {
+          3.9733 1.0000
+        }
+        {
+          3.9733 0.5000
+        }
+        "lower_lip" 
+        {
+          0.1467 0.1000
+          2.4667 1.0000
+          3.9733 0.6198
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.1467 0.4100
+          2.4667 0.2064
+          3.9733 0.3236
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1467 0.3900
+          2.4667 0.1411
+          3.9733 0.2843
+          5.4707 0.3500
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1467 0.3100
+          2.4667 0.8600
+          3.9733 0.7400
+          5.4707 0.7100
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          2.4667 0.2400
+          3.9733 0.4600
+        }
+      }
+    }
+  }
+  channel "trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 0.133333 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 2.493333 -1.000000
+      param "2"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

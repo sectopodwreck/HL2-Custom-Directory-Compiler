@@ -1,0 +1,119 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_rad_hereletme"
+    {
+      time 0.126667 1.577347
+      param "ep_02.al_rad_hereletme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "A_g_mid_2hdcutdwn_rt"
+    {
+      time 0.093334 2.466667
+      param "A_g_mid_2hdcutdwn_rt"
+      absolutetags playback_time
+      {
+        "apex" 0.252809
+        "accent" 0.431461
+        "loop" 0.658989
+        "end" 0.677528
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.109589
+        "accent" 0.287671
+        "loop" 0.534247
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+    event gesture "A_bg_acc_side_rt_ik"
+    {
+      time 0.060000 2.860000
+      param "A_bg_acc_side_rt_ik"
+      absolutetags playback_time
+      {
+        "apex" 0.072289
+        "extreme" 0.216867
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072289
+        "extreme" 0.216867
+        "loop" 0.506024
+        "end" 0.662651
+      }
+      sequenceduration 2.800000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.046666 2.053333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          1.2500 0.0000
+          1.4037 0.5000
+          1.6167 0.0000
+        }
+        "corner_puller" combo 
+        {
+          0.0630 0.0000
+          0.8648 0.3200
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.040000 2.060000
+      param "!player"
+      event_ramp
+      {
+        0.0260 0.0000
+        0.5000 1.0000
+        1.5040 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 0.066667 2.060000
+      param "!player"
+      event_ramp
+      {
+        0.0180 0.0000
+        0.4920 1.0000
+        1.4960 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,98 @@
+// Choreo version 1
+actor "Prisoner1"
+{
+  channel "Speech"
+  {
+    event speak "Prisoner1.LetUsOut"
+    {
+      time 0.000000 2.240000
+      param "Prisoner1.LetUsOut"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "palmout"
+    {
+      time 0.297342 2.837818
+      param "g_palm_out_high_l"
+      absolutetags playback_time
+      {
+        "apex" 0.132809
+        "accent" 0.394696
+        "loop" 0.558502
+        "end" 0.739470
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      sequenceduration 2.766667
+    }
+    event gesture "leanright"
+    {
+      time 0.158453 2.211628
+      param "bg_right"
+      absolutetags playback_time
+      {
+        "apex" 0.164848
+        "extreme" 0.313211
+        "loop" 0.511029
+        "end" 0.700193
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event gesture "righthand"
+    {
+      time 0.225914 2.446550
+      param "G_righthandmotion"
+      absolutetags playback_time
+      {
+        "apex" 0.213774
+        "accent" 0.375054
+        "loop" 0.584013
+        "end" 0.721533
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.241379
+        "accent" 0.517241
+        "loop" 0.689655
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "LookAtPlayer"
+    {
+      time 0.003968 2.837303
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "168"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

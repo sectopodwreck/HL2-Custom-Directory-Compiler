@@ -1,0 +1,208 @@
+// Choreo version 1
+event section "pause"
+{
+  time 2.000000 -1.000000
+  param "noaction"
+}
+actor "odessa1"
+{
+  channel "voice"
+  {
+    event speak "oa_snintro1.wav"
+    {
+      time 0.020000 1.784716
+      param "oa.snintro1"
+      resumecondition
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "oa_snintro2.wav"
+    {
+      time 3.486667 6.760680
+      param "oa.snintro2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "oa_snintro1.wav"
+    {
+      time 7.446667 9.529207
+      param "oa.snintro3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "oa_snintro4.wav"
+    {
+      time 12.459999 14.953241
+      param "oa.snintro4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "trigger2"
+    {
+      time 10.460000 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 2.500000 -1.000000
+      param "1"
+    }
+  }
+  channel "movement"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.000000 1.780000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "facing"
+  {
+    event face "Face !player"
+    {
+      time 2.480000 10.760002
+      param "!player"
+    }
+    event face "Face !target3"
+    {
+      time 10.846667 13.006667
+      param "!target3"
+    }
+    event face "Face !player"
+    {
+      time 13.280001 14.986668
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !target2"
+    {
+      time 0.006667 1.800000
+      param "!target2"
+    }
+    event lookat "Look at !player"
+    {
+      time 2.486667 10.753334
+      param "!player"
+    }
+    event lookat "Look at !target3"
+    {
+      time 10.846667 13.000001
+      param "!target3"
+    }
+    event lookat "Look at !player"
+    {
+      time 13.273334 14.993334
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "G_righthandpoint"
+    {
+      time 3.080000 5.380000
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "G_shrug"
+    {
+      time 7.433334 9.133334
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+  }
+  channel "expressions"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 7.133333 14.960001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2720 0.2700
+          1.1083 0.7400
+          3.6083 0.9100
+          6.3250 0.7500
+          7.0447 0.4100
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.2780 0.1500
+          7.2013 0.1000
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.3250 0.0700
+          7.0833 0.1500
+        }
+        {
+        }
+        "jaw_drop" 
+        {
+          0.3000 0.0600
+          6.9970 0.0900
+        }
+        "mouth_drop" combo 
+        {
+          0.2340 0.0800
+          7.0780 0.1200
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "24"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

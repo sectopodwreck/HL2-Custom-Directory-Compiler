@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "character1"
+{
+  channel "speech"
+  {
+    event speak "southern.line3"
+    {
+      time 0.033333 1.131859
+      param "southern.line3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.026667 2.040000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_puller" combo 
+        {
+          0.1580 0.0000
+          1.2280 0.9000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.026667 2.040000
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.040000 2.053333
+      param "!player"
+      event_ramp
+      {
+        0.0360 0.0000
+        0.5440 1.0000
+        1.6493 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

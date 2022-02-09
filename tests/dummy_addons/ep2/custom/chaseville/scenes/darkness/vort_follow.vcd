@@ -1,0 +1,36 @@
+// Choreo version 1
+event loop "follow_forever"
+{
+  time 3.000000 -1.000000
+  param "0.500000"
+  loopcount "-1"
+}
+actor "darkvort"
+{
+  channel "follow"
+  {
+    event moveto "moveto_player"
+    {
+      time 0.004902 3.142157
+      param "!player"
+      param2 "Walk"
+    }
+    event lookat "lookat_player"
+    {
+      time 0.000000 3.147059
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

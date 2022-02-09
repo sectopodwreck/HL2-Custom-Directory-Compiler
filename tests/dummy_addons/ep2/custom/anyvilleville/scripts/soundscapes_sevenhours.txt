@@ -1,0 +1,264 @@
+"sevenhours.peace_garage"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/sewer_air1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+}
+
+
+"sevenhours.peace_stairwell"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\ambience_base.wav"
+	}
+
+}
+
+"sevenhours.peace_office"
+{
+	"playrandom"
+	{
+		"time"		"2,7"
+		"volume"	"0.15,0.28"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel" "SNDLVL_140dB"
+
+		"rndwave"
+		{
+					"wave"  "ambient/materials/bump1.wav"
+					"wave"  "ambient/materials/shuffle1.wav"
+					"wave"  "ambient/materials/squeeker2.wav"
+					"wave"  "ambient/materials/squeekyfloor1.wav"
+					"wave"  "ambient/materials/squeekyfloor2.wav"
+				//	"wave"  "ambient/materials/cupdrop.wav"
+					"wave"  "ambient/materials/dinnerplates1.wav"
+					"wave"  "ambient/materials/dinnerplates2.wav"
+					"wave"  "ambient/materials/dinnerplates3.wav"
+					"wave"  "ambient/materials/dinnerplates4.wav"
+					"wave"  "ambient/materials/dinnerplates5.wav"
+					"wave"  "ambient/voices/cough1.wav"
+					"wave"  "ambient/voices/cough2.wav"
+					"wave"  "ambient/voices/cough3.wav"
+					"wave"  "ambient/voices/cough4.wav"
+					"wave"  "ambient/materials/flush1.wav"
+					"wave"  "ambient/materials/flush2.wav"
+					"wave"  "ambient/materials/footsteps_wood1.wav"
+					"wave"  "ambient/materials/footsteps_wood2.wav"
+					"wave"  "ambient/materials/rustypipes1.wav"
+					"wave"  "ambient/materials/rustypipes2.wav"
+					"wave"  "ambient/materials/rustypipes3.wav"
+		}
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ambient\levels\outland\OL01Portal_Loop_Stage01.wav"
+		"pitch"		"100"
+		"position"	"0"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"GenericIndoor"
+		"volume"	"0.5"
+	}
+}
+
+
+"sevenhours.war_garage"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/sewer_air1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat"
+		"volume"	"0.75"
+	}
+
+
+}
+
+"sevenhours.war_garage_loud"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/sewer_air1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"sevenhours.war_exterior"
+		"volume"	"0.5"
+	}
+
+}
+
+"sevenhours.war_stairwell"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\ambience_base.wav"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat"
+		"volume"	"0.75"
+	}
+
+}
+
+"sevenhours.war_office"
+{
+
+	"playsoundscape"
+	{
+		"name"		"GenericIndoor"
+		"volume"	"0.5"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_medium_combat"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/corridor.wav"
+	}
+}
+
+"sevenhours.war_office_horror"
+{
+
+	"playsoundscape"
+	{
+		"name"		"sevenhours.war_office"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleInside"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"0.5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/corridor.wav"
+	}
+
+}
+
+"sevenhours.war_exterior"
+{
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_combine_atmosphere"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat_atmosphere"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_sirens"
+		"volume"	"1.0"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"d3_citadel.util_activity"
+		"volume"	"0.5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient/atmosphere/corridor.wav"
+	}
+
+}

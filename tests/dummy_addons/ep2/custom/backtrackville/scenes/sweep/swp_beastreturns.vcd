@@ -1,0 +1,49 @@
+// Choreo version 1
+actor "v"
+{
+  channel "vo"
+  {
+    event speak "swp.beastreturns"
+    {
+      time 1.000000 2.729887
+      param "swp.beastreturns"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.000000 4.000000
+      param "!target1"
+    }
+  }
+  channel "facing"
+  {
+    event face "Face  !target1"
+    {
+      time 0.000000 4.000000
+      param "!target1"
+    }
+  }
+  channel "misc"
+  {
+    event firetrigger "firetrigger1"
+    {
+      time 0.500000 -1.000000
+      param "1"
+    }
+  }
+  faceposermodel "models\vortigaunt_slave.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

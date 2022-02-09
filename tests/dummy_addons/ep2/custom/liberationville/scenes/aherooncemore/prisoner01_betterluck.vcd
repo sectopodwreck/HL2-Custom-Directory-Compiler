@@ -1,0 +1,194 @@
+// Choreo version 1
+actor "prisoner01"
+{
+  channel "audio"
+  {
+    event speak "npc_citizen.zombies02"
+    {
+      time 9.336191 10.158572
+      param "npc_citizen.zombies02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep1_citizen.cit_alert_zombie03"
+    {
+      time 7.902858 8.957529
+      param "ep1_citizen.cit_alert_zombie03"
+      param2 "VOL_NORM"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep1_citizen.cit_evac_no04"
+    {
+      time 0.127451 2.736794
+      param "ep1_citizen.cit_evac_no04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ep1_citizen.cit_evac_no02"
+    {
+      time 2.833333 4.717052
+      param "ep1_citizen.cit_evac_no02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "npc_citizen.letsgo01"
+    {
+      time 10.666667 11.914468
+      param "npc_citizen.letsgo01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_look_small"
+    {
+      time 0.093169 1.559835
+      param "G_look_small"
+      absolutetags playback_time
+      {
+        "apex" 0.325581
+        "accent" 0.465116
+        "loop" 0.604651
+        "end" 0.697674
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.325581
+        "accent" 0.465116
+        "loop" 0.604651
+        "end" 0.697674
+      }
+      sequenceduration 1.466667
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !target1"
+    {
+      time 7.520178 12.019123
+      param "!target1"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.106667 7.162540
+      param "!player"
+    }
+  }
+  channel "faceat"
+  {
+    event face "Face !player"
+    {
+      time 0.119048 7.293652
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "Moveto !target3"
+    {
+      time 0.031746 0.603174
+      param "!target3"
+      param2 "Walk"
+    }
+  }
+  channel "trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 7.361919 -1.000000
+      param "1"
+    }
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+actor "odessa"
+{
+  channel "audio"
+  {
+    event speak "odessa.nlo_cub_youllmakeit"
+    {
+      time 4.829525 6.667167
+      param "odessa.nlo_cub_youllmakeit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_fist_swing_across"
+    {
+      time 4.609524 6.909524
+      param "g_fist_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.047987 7.461256
+      param "!player"
+    }
+    event lookat "Look at !target1"
+    {
+      time 7.858804 12.043352
+      param "!target1"
+    }
+  }
+  channel "faceat"
+  {
+    event face "Face !player"
+    {
+      time 0.058824 8.147059
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "Moveto !target2"
+    {
+      time 0.058844 0.558844
+      param "!target2"
+      param2 "Walk"
+    }
+  }
+  faceposermodel "models\odessa.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

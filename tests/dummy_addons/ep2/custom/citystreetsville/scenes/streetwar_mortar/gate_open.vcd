@@ -1,0 +1,95 @@
+// Choreo version 1
+actor "Barney"
+{
+  channel "audio"
+  {
+    event speak "ba_ourgate"
+    {
+      time 0.033334 2.357212
+      param "nexus.ba_ourgate"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ba_done"
+    {
+      time 3.988890 4.860341
+      param "nexus.ba_done"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+  }
+  channel "move to "
+  {
+  }
+  channel "face to"
+  {
+  }
+  channel "sequence"
+  {
+  }
+  channel "postures"
+  {
+    event gesture "p_ConsoleType_Rifle"
+    {
+      time 1.188890 5.466668
+      param "p_ConsoleType_Rifle"
+      absolutetags playback_time
+      {
+        "apex" 0.078828
+        "loop" 0.370492
+        "end" 0.770209
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.116279
+        "loop" 0.546512
+        "end" 0.697674
+      }
+      sequenceduration 2.900000
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "g_consoleType_rifle"
+    {
+      time 2.677779 5.022223
+      param "g_consoleType_rifle"
+      absolutetags playback_time
+      {
+        "in" 0.231410
+        "loop" 0.289263
+        "end" 0.754123
+        "out" 0.771185
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.275862
+        "loop" 0.344828
+        "end" 0.758621
+        "out" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "trigger"
+  {
+  }
+}
+
+mapname "maps\klab_actormarks.bsp"
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "50"
+  "RampTool" "38"
+  "ExpressionTool" "40"
+  "CChoreoView" "68"
+}
+fps 60
+snap off
+ignorePhonemes off

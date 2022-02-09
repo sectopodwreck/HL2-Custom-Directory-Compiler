@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "prisoner01"
+{
+  channel "audio"
+  {
+    event speak "npc_citizen.evenodds"
+    {
+      time 0.468254 1.916599
+      param "npc_citizen.evenodds"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.242400 2.086350
+      param "!target1"
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "trigger"
+  {
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "84"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,221 @@
+
+"klems.outside"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"		"ambient/wind/wind_rooftop1.wav"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_birds"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_critters"
+		"volume"	"0.8"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_windgusts"
+		"volume"	"0.8"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"
+		"volume"	"0.8"
+	}
+}
+
+"klems.inside_generic"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient\atmosphere\quiet_cellblock_amb.wav"
+		"pitch"		"100"
+	}
+	
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.35,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/materials/wood_creak1.wav"
+			"wave"	"ambient/materials/wood_creak2.wav"
+			"wave"	"ambient/materials/wood_creak3.wav"
+			"wave"	"ambient/materials/wood_creak4.wav"
+			"wave"	"ambient/materials/wood_creak5.wav"
+			"wave"	"ambient/materials/wood_creak6.wav"
+		}
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"
+		"volume"	"0.4"
+	}
+
+}
+
+"klems.inside_manor"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/Drone2LP.wav"
+		"pitch"		"100"
+	}
+
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.35,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/materials/wood_creak1.wav"
+			"wave"	"ambient/materials/wood_creak2.wav"
+			"wave"	"ambient/materials/wood_creak3.wav"
+			"wave"	"ambient/materials/wood_creak4.wav"
+			"wave"	"ambient/materials/wood_creak5.wav"
+			"wave"	"ambient/materials/wood_creak6.wav"
+			"wave"	"ambient/materials/shutter7.wav"
+			"wave"	"ambient/materials/shutter8.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.2,0.4"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/rats1.wav"
+			"wave"	"ambient/creatures/rats2.wav"
+			"wave"	"ambient/creatures/rats3.wav"
+			"wave"	"ambient/creatures/rats4.wav"
+		}
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"
+		"volume"	"0.4"
+	}
+	
+}
+
+"klems.inside_hangar"
+{
+	"dsp"	"1"
+	
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\station_ambience_stereo_loop1.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.35,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/materials/wood_creak1.wav"
+			"wave"	"ambient/materials/wood_creak2.wav"
+			"wave"	"ambient/materials/wood_creak3.wav"
+			"wave"	"ambient/materials/wood_creak4.wav"
+			"wave"	"ambient/materials/wood_creak5.wav"
+			"wave"	"ambient/materials/wood_creak6.wav"
+		}
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_metalstress"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"
+		"volume"	"0.4"
+	}
+
+}
+
+"klems.inside_crypt"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"ambient/levels/canals/tunnel_wind_loop1.wav"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_fardrips"
+		"volume"	"1.0"
+	}
+}
+
+"klems.outro"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"80"
+		"wave"		"ambient\levels\citadel\citadel_drone_loop2.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"4, 12"
+		"volume"	"0.8"
+		"pitch"		"90,110"
+		"soundlevel"	"SNDLVL_140db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient/atmosphere/thunder1.wav"
+			"wave"	"ambient/atmosphere/thunder2.wav"
+			"wave"	"ambient/atmosphere/thunder3.wav"
+			"wave"	"ambient/atmosphere/thunder4.wav"
+		}
+	}
+}

@@ -1,0 +1,99 @@
+"ahom_pt2.cubb_objective"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_objective.wav"
+}
+
+"ahom_pt2.cubb_sink"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_sink.wav"
+}
+
+"ahom_pt2.cubb_holdspot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_holdspot.wav"
+}
+
+"ahom_pt2.cubb_radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_radio.wav"
+}
+
+"ahom_pt2.cubb_mortar"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_mortar.wav"
+}
+
+"ahom_pt2.cubb_usemortar"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_usemortar.wav"
+}
+
+"ahom_pt2.cubb_postmortar"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_postmortar.wav"
+}
+
+"ahom_pt2.cubb_trap"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_trap.wav"
+}
+
+"ahom_pt2.cubb_outro"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"*vo/ahom_pt2/cubb_outro.wav"
+}
+

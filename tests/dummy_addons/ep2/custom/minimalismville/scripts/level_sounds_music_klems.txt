@@ -1,0 +1,19 @@
+
+"klems.music1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"0"
+	"wave"			"*#klems/music1.mp3"
+}
+
+"klems.music2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"0"
+	"wave"			"*#klems/music2.mp3"
+}
+

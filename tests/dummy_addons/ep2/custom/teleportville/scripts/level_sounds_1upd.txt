@@ -1,0 +1,65 @@
+"1upd.frederick.malachi"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/malachi.wav"
+}
+
+"1upd.frederick.trackingdevice"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/frederick/trackingdevice.wav"
+}
+
+"1upd.malachi.goodmorning"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/malachi/goodmorning.wav"
+}
+
+"1upd.malachi.deserters"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/malachi/deserters.wav"
+}
+
+"1upd.malachi.share"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/malachi/share.wav"
+}
+
+"1upd.malachi.turnyourselfin"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/malachi/turnyourselfin.wav"
+}

@@ -1,0 +1,91 @@
+// Choreo version 1
+actor "shoot_rescuenpc3"
+{
+  channel "speech"
+  {
+    event speak "streetwar.c17_10_letusout"
+    {
+      time 0.753333 2.446122
+      param "streetwar.c17_10_letusout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.080000 3.060000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.7923 0.0000
+          0.9327 0.8900
+          1.0231 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          0.0259 0.0000
+          0.6137 0.5900
+          1.9519 1.0000
+          2.6667 0.8000
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.3885 0.0000
+          1.0269 0.6500
+          2.4481 0.0000
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.0058 0.0000
+          0.7385 0.6300
+          2.1019 0.4000
+        }
+        "corner_depressor" combo 
+        {
+          0.0259 0.0000
+          0.5407 0.4500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.100000 3.100000
+      param "!player"
+      event_ramp
+      {
+        0.0280 0.0000
+        0.4920 1.0000
+        2.5020 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "104"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

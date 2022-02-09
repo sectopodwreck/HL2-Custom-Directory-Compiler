@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "odessa_outro"
+{
+  channel "audio"
+  {
+    event speak "odessa.nlo_cub_teachgunship"
+    {
+      time 0.300000 3.607732
+      param "odessa.nlo_cub_teachgunship"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "hg_headshake"
+    {
+      time 2.299999 3.933333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.066666 4.993332
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "Face !player"
+    {
+      time 0.053333 4.993333
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.359999 2.993333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_puller" combo 
+        {
+          0.4467 0.2100
+          1.0533 0.8900
+        }
+        {
+          0.4467 0.5000
+          1.0533 0.5000
+        }
+        "smile" 
+        {
+          0.4467 0.3300
+          1.0533 0.3571
+        }
+      }
+    }
+  }
+  channel "moveto"
+  {
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

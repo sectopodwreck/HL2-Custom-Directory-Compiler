@@ -1,0 +1,188 @@
+// Choreo version 1
+actor "character1"
+{
+  channel "speech"
+  {
+    event speak "southern.line4a"
+    {
+      time 0.040000 3.052789
+      param "southern.line4a"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "southern.line4b"
+    {
+      time 3.086666 6.147278
+      param "southern.line4b"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "southern.line4c"
+    {
+      time 6.199999 9.414715
+      param "southern.line4c"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_lookatthis"
+    {
+      time 0.626666 3.666667
+      param "G_lookatthis"
+      absolutetags playback_time
+      {
+        "apex" 0.186842
+        "accent" 0.372368
+        "loop" 0.509211
+        "end" 0.525658
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.473684
+        "end" 0.473684
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "G_lefthandmotion"
+    {
+      time 3.066667 5.933334
+      param "G_lefthandmotion"
+      absolutetags playback_time
+      {
+        "apex" 0.186977
+        "accent" 0.300000
+        "loop" 0.317442
+        "end" 0.574884
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.224138
+        "accent" 0.482759
+        "loop" 0.517241
+        "end" 0.724138
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "g_mid_relaxed_fist_accent"
+    {
+      time 6.126667 9.673334
+      param "g_mid_relaxed_fist_accent"
+      absolutetags playback_time
+      {
+        "apex" 0.114441
+        "accent" 0.227256
+        "loop" 0.527819
+        "end" 0.633271
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.235294
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 3.066667 10.433334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          3.6100 0.0000
+          4.5800 0.4600
+          5.4520 0.5100
+          6.2920 0.1700
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.0980 0.0000
+          1.0660 0.2900
+          3.3620 0.6500
+          4.9620 0.6700
+          5.8160 0.5900
+          7.0920 0.4000
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "surprised"
+    {
+      time 0.606666 3.720000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2820 0.0000
+          1.2480 0.7900
+          2.6460 0.7000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event face "Face !player"
+    {
+      time 0.020000 9.526667
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.026667 9.553333
+      param "!player"
+      event_ramp
+      {
+        0.0540 0.0000
+        0.5140 1.0000
+        8.5060 1.0000
+      }
+    }
+    event lookat "Look at character1_target1"
+    {
+      time 9.580001 11.506668
+      param "character1_target1"
+      event_ramp
+      {
+        0.0540 0.0000
+        0.5400 1.0000
+        1.4840 1.0000
+      }
+    }
+    event face "Face character1_target1"
+    {
+      time 9.573334 11.500001
+      param "character1_target1"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

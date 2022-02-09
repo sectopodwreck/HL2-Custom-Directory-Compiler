@@ -1,0 +1,284 @@
+//////////////////////////////////////////////////////////
+// Sweep Level Sounds
+// Make sure this is included in game_sounds_manifest.txt!
+//////////////////////////////////////////////////////////
+
+///////////////
+// INTRO Dialog
+///////////////
+
+"swp.intro1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro1.wav"
+}
+"swp.intro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro2.wav"
+}
+"swp.intro3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro3.wav"
+}
+"swp.intro4a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro4a.wav"
+}
+"swp.intro4b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro4b.wav"
+}
+"swp.intro5a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro5a.wav"
+}
+"swp.intro5b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro5b.wav"
+}
+"swp.intro6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro6.wav"
+}
+"swp.intro7a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro7a.wav"
+}
+"swp.intro7b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro7b.wav"
+}
+"swp.intro8a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro8a.wav"
+}
+"swp.intro8b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro8b.wav"
+}
+"swp.intro9a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro9a.wav"
+}
+"swp.intro9b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro9b.wav"
+}
+"swp.intro10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_intro10.wav"
+}
+
+
+/////////////////
+// GENERAL Dialog
+/////////////////
+
+"swp.afteryou"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_afteryou.wav"
+}
+"swp.astheysay1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_astheysay1.wav"
+}
+"swp.astheysay2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_astheysay2.wav"
+}
+"swp.beastreturns"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_beastreturns.wav"
+}
+"swp.coverburrows"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_coverburrows.wav"
+}
+"swp.heretheycome"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_heretheycome.wav"
+}
+"swp.notright1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_notright1.wav"
+}
+"swp.notright2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_notright2.wav"
+}
+"swp.thatwasclose"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_thatwasclose.wav"
+}
+"swp.tracks"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_tracks.wav"
+}
+"swp.turncrank"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_turncrank.wav"
+}
+"swp.unwise"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_unwise.wav"
+}
+"swp.watchout"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_watchout.wav"
+}
+
+///////////////
+// OUTRO Dialog
+///////////////
+
+"swp.outro1a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_outro1a.wav"
+}
+"swp.outro1b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_outro1b.wav"
+}
+"swp.outro2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_outro2.wav"
+}
+"swp.outro3a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_outro3a.wav"
+}
+"swp.outro3b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"			"*vo/sweep/swp_outro3b.wav"
+}

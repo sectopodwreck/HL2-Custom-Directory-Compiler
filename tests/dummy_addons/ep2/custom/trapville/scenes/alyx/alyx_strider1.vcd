@@ -1,0 +1,83 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_02.al_car_jumpyell05"
+    {
+      time 0.093333 3.144059
+      param "ep_02.al_car_jumpyell05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "A_g_buggy_lh_chop"
+    {
+      time 1.640000 3.926666
+      param "A_g_buggy_lh_chop"
+      absolutetags playback_time
+      {
+        "apex" 0.222429
+        "accent" 0.296572
+        "loop" 0.550146
+        "end" 0.670846
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.344828
+        "loop" 0.431034
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.033333 4.080000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.0327 0.0000
+          0.7923 0.7800
+          3.0635 0.8000
+          3.2788 0.4100
+          3.6135 0.0800
+          3.8904 0.2500
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.0481 0.0000
+          0.6808 0.3700
+          2.6596 0.3900
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "104"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

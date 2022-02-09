@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "prisoner01"
+{
+  channel "audio"
+  {
+    event speak "streetwar.c17_05_opengate"
+    {
+      time 0.468750 1.342627
+      param "streetwar.c17_05_opengate"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "sequence"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.125000 1.593750
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "trigger"
+  {
+  }
+  faceposermodel "models\humans\group01\male_01.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "64"
+}
+fps 60
+snap off
+ignorePhonemes off

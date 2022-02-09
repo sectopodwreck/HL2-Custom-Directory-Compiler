@@ -1,0 +1,64 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "vo"
+  {
+    event speak "ddawg.hey01"
+    {
+      time 0.700000 1.623628
+      param "ddawg.hey01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.066667 2.006667
+      param "!player"
+      event_ramp
+      {
+        0.3640 0.8462
+        1.7440 0.7821
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "g_SMG1_Stop"
+    {
+      time 0.106667 2.573334
+      param "g_SMG1_Stop"
+      absolutetags playback_time
+      {
+        "apex" 0.178082
+        "accent" 0.246575
+        "loop" 0.547945
+        "end" 0.684932
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.178082
+        "accent" 0.246575
+        "loop" 0.547945
+        "end" 0.684932
+      }
+      sequenceduration 2.466667
+    }
+  }
+  faceposermodel "models\humans\group03\male_01_bloody.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

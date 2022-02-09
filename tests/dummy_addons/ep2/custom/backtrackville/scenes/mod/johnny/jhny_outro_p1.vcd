@@ -1,0 +1,43 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "vo"
+  {
+    event speak "jhny.outro01"
+    {
+      time 0.100000 1.098458
+      param "jhny.outro01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "jhny.outro02"
+    {
+      time 1.213333 2.722630
+      param "jhny.outro02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "jhny.outro03"
+    {
+      time 2.893334 5.644898
+      param "jhny.outro03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

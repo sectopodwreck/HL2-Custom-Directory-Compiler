@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "!Target1"
+{
+  channel "vo"
+  {
+    event speak "ddawg.brief01"
+    {
+      time 0.293333 4.527845
+      param "ddawg.brief01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ddawg.cough01"
+    {
+      time 4.793333 6.143265
+      param "ddawg.cough01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ddawg.brief02"
+    {
+      time 6.533333 13.112449
+      param "ddawg.brief02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.096032 13.396033
+      param "!player"
+      event_ramp
+      {
+        0.2000 0.9359
+        13.1140 0.8718
+      }
+    }
+  }
+  channel "gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "60"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

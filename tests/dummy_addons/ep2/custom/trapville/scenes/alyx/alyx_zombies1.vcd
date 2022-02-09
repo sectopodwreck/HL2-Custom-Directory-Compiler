@@ -1,0 +1,73 @@
+// Choreo version 1
+actor "alyx"
+{
+  channel "speech"
+  {
+    event speak "ep_01.al_alert_zombies05"
+    {
+      time 0.080000 3.197211
+      param "ep_01.al_alert_zombies05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.046666 4.033333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.0259 0.0000
+          0.5889 0.4400
+          2.8241 0.4500
+          3.6519 0.4400
+        }
+        {
+        }
+        "corner_depressor" combo 
+        {
+          0.0185 0.0000
+          0.5796 0.4700
+          2.8111 0.4600
+          3.6426 0.4600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "motion"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.620000 4.046667
+      param "!player"
+      event_ramp
+      {
+        0.0100 0.0000
+        0.9940 1.0000
+        2.0200 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
