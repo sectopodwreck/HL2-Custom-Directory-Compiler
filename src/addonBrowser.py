@@ -27,7 +27,7 @@ surfaceproperties_manifest
 strPath: Path to directory with default files
 """
 def kvLoadDefault(strPath):
-    
+    pass
 
 """
 Get the mod of the custom directory we are in.
