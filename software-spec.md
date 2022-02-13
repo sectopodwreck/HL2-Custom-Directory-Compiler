@@ -7,7 +7,7 @@ The HL2 Custom Compiler is a simple, straightforward script designed to be used 
 
 ## Front-End
 
-As our goal is only to automate a task that can be done by a human, without any need for customization by the user, there will be no GUI for this program. The most feedback the end user shall recieve should be a console window printing out all of their addons which have been added to the merge, along with a new directory being formed inside the same directory the binary is located.
+As our goal is only to automate a task that can be done by a human, without any need for customization by the user, there will be no GUI for this program. The most feedback the end user shall receive should be a console window printing out all of their addons which have been added to the merge, along with a new directory being formed inside the same directory the binary is located.
 
 ## Functional Requirements
 
@@ -19,9 +19,19 @@ We must be able to:
 * Search through a directory tree recursively to find a specific file type.
 * Create a new directory that mimics a standard `/custom` addon in order to apply the changes
 * Allow for the *raw* python files to be easily imported and used in other project to allow other to include this functionality.
-* For each script, allow them to be used independantly through the CLI.
+* For each script, allow them to be used independently through the CLI.
 
-# Non-Functional Requirements
+## Non-Functional Requirements
 
 * Compile the program into a single binary for ease of use and distribution.
-* Prevent any malitious OS operations (Deleting a file which was not created by our own program.)
+* Prevent any malicious OS operations (Deleting a file which was not created by our own program.)
+
+## Target Files
+
+There are many common files which get overwritten whenever a level developer publishes their map. Our goal is to resolve the conflicts of:
+
+* `/scripts/game_sounds_manifest.txt`
+* `/scripts/soundsscapes_manifest.txt`
+* `/scripts/chapterbackgrounds.txt`
+* `/particles/particle_manifest.txt`
+* `/scenes/*.vcd` These will get compiled into `/scenes/scenes.image`.
