@@ -1,0 +1,16 @@
+{
+    "particles_manifest": {
+        "file": [
+            "particles/ep1_fx.pcf",
+            "particles/error.pcf",
+            "particles/antlion_blood.pcf",
+            "particles/blood_impact.pcf",
+            "particles/water_impact.pcf",
+            "particles/fire_01.pcf",
+            "particles/burning_fx.pcf",
+            "particles/combineball.pcf",
+            "particles/rocket_fx.pcf",
+            "particles/Vortigaunt_FX.pcf"
+        ]
+    }
+}

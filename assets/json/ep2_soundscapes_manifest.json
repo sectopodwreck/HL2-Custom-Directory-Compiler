@@ -1,0 +1,22 @@
+{
+    "soundscapes_manifest": {
+        "file": [
+            "scripts/soundscapes.txt",
+            "scripts/soundscapes_lostcoast.txt",
+            "scripts/soundscapes_citadel_episodic.txt",
+            "scripts/soundscapes_city_episodic.txt",
+            "scripts/soundscapes_canals.txt",
+            "scripts/soundscapes_klab.txt",
+            "scripts/soundscapes_elab.txt",
+            "scripts/soundscapes_streetwar.txt",
+            "scripts/soundscapes_citadel.txt",
+            "scripts/soundscapes_town.txt",
+            "scripts/soundscapes_coast.txt",
+            "scripts/soundscapes_prison.txt",
+            "scripts/soundscapes_trainyard.txt",
+            "scripts/soundscapes_silo.txt",
+            "scripts/soundscapes_outland.txt",
+            "scripts/soundscapes_outland2.txt"
+        ]
+    }
+}

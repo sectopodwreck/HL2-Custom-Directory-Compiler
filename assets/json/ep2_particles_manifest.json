@@ -1,0 +1,43 @@
+{
+    "particles_manifest": {
+        "file": [
+            "particles/explosion.pcf",
+            "particles/vehicle.pcf",
+            "particles/dust_bombdrop.pcf",
+            "particles/building_explosion.pcf",
+            "particles/antlion_gib_01.pcf",
+            "particles/antlion_gib_02.pcf",
+            "particles/stalactite.pcf",
+            "particles/striderbuster.pcf",
+            "particles/door_explosion.pcf",
+            "particles/choreo_launch.pcf",
+            "particles/water_leaks.pcf",
+            "particles/antlion_worker.pcf",
+            "particles/skybox_smoke.pcf",
+            "particles/waterfall.pcf",
+            "particles/aurora.pcf",
+            "particles/rain.pcf",
+            "particles/warpshield.pcf",
+            "particles/aurora_sphere2.pcf",
+            "particles/advisor.pcf",
+            "particles/hunter_shield_impact.pcf",
+            "particles/hunter_intro.pcf",
+            "particles/dust_rumble.pcf",
+            "particles/Advisor_FX.pcf",
+            "particles/hunter_projectile.pcf",
+            "particles/choreo_dog_v_strider.pcf",
+            "particles/steampuff.pcf",
+            "particles/magnusson_burner.pcf",
+            "particles/waterdrips.pcf",
+            "particles/hunter_flechette.pcf",
+            "particles/choreo_gman.pcf",
+            "particles/weapon_fx.pcf",
+            "particles/choreo_extract.pcf",
+            "particles/devtest.pcf",
+            "particles/electrical_fx.pcf",
+            "particles/grub_blood.pcf",
+            "particles/grenade_fx.pcf",
+            "particles/impact_fx.pcf"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "surfaceproperties_manifest": {
+        "file": [
+            "scripts/surfaceproperties.txt",
+            "scripts/surfaceproperties_hl2.txt"
+        ]
+    }
+}

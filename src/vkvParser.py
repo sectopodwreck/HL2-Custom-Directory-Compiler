@@ -9,6 +9,8 @@ It's possible for the keyval to have the same keys, so the main value will be an
 
 '''
 
+from os.path import isdir, abspath, basename, splitext
+
 """
 Reads the given file, and turns it into a dictionary.
 
@@ -21,6 +23,8 @@ def load(pFile):
     #Prepare the dictionary
     dictFile = {}
     strActiveKey = ""
+
+    pFile.seek(0)
 
     while (strLine := pFile.readline()):
         """
@@ -145,7 +149,7 @@ if __name__ == "__main__":
 
     parser.add_argument("-v", "--valve", type=ap.FileType("r", encoding="utf-8"), help="The file path to a Valve Keyval file.")
     parser.add_argument("-j", "--json", type=ap.FileType("r", encoding="utf-8"), help="The file path to a json file containing Keyval information.")
-    parser.add_argument("-o", "--output", type=ap.FileType("w", encoding="utf-8"), help="The file path for where the converted data should go.")
+    parser.add_argument("-o", "--output", type=str, help="The file path for where the converted data should go.")
     parser.add_argument("-p", "--print", action="store_true", help="Prints out the contents of the bonus map.")
 
     args = parser.parse_args()
@@ -171,7 +175,11 @@ if __name__ == "__main__":
 
         #User wants to output as a json.
         if(args.output):
-            js.dump(dictData, args.output, indent=4)
+            if(isdir(args.output)):
+                args.output = f"{abspath(args.output)}/{splitext(basename(args.valve.name))[0]}.json"
+            pOutputFile = open(args.output, "w+")
+            js.dump(dictData, pOutputFile, indent=4)
+            pOutputFile.close()
 
         #Exit out before fucking anything else up.
         exit(0)
@@ -187,7 +195,11 @@ if __name__ == "__main__":
 
         #User wants to output as a keyval.
         if(args.output):
-            save(dictData, args.output)
+            if(isdir(args.output)):
+                args.output = f"{abspath(args.output)}/{splitext(basename(args.json.name))[0]}.txt"
+            pOutputFile = open(args.output, "w+")
+            save(dictData, pOutputFile)
+            pOutputFile.close()
 
         #Exits out before fucking anything else up.
         exit(0)
