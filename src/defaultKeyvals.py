@@ -6,6 +6,11 @@ All methods return a dictionary of dictionary of arrays.
 
 import vkvParser as vkv
 
+GAME_OVERWRITE_STRING = "\"lang\"\r\n{{\r\n\"Language\" \"English\"\r\n\"Tokens\"\r\n{{\r\n\"GameUI_LaunchBenchmark_Info\" \"Merged Addons:\\n\\n{0}\"\r\n}}\r\n}}"
+
+GAME_CFG = "//Displays overwrite error\noverwrite"
+MODSETTINGS_CFG = "//Sets up viewing the overwrite error.\nalias overwrite \"gamemenucommand OpenBenchmarkDialog; alias overwrite \"\"\""
+
 HL2_GAME_DEFAULT = [
     "scripts/game_sounds.txt",
     "scripts/game_sounds_ui.txt",

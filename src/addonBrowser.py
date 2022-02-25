@@ -10,6 +10,7 @@ After, it will create a new addon file with the conflicted files that will load 
 import os
 import defaultKeyvals as dk
 import vkvParser as vk
+import binascii as ba
 
 """
 The bread and butter of the operation
@@ -28,21 +29,40 @@ def mainMergeAddons(strPath):
     addonMergeKvFiles(dictSoundscapes, "scripts/soundscapes_manifest.txt", arrAddons)
     addonMergeKvFiles(dictSurfaceprop, "scripts/surfaceproperties_manifest.txt", arrAddons)
 
-    #Developer save these, just for now to make sure it merges properly.
-    with open("./testSoundManifest.txt", "w+") as pFile:
+    #Get the merger addon directory we will use.
+    strMergeDir = mainGetMergeAddon(strPath)
+
+    #Create any relavant subdirs just in case.
+    os.makedirs(f"{strMergeDir}/scripts", exist_ok=True)
+    os.makedirs(f"{strMergeDir}/particles", exist_ok=True)
+    os.makedirs(f"{strMergeDir}/resource", exist_ok=True)
+
+    #Save the merged keyvals to the addon.
+    with open(f"{strMergeDir}/scripts/game_sounds_manifest.txt", "w+") as pFile:
         vk.save(dictSounds, pFile)
         pFile.close()
 
-    with open("./testParticleManifest.txt", "w+") as pFile:
+    with open(f"{strMergeDir}/particles/particles_manifest.txt", "w+") as pFile:
         vk.save(dictParticles, pFile)
         pFile.close()
 
-    with open("./testSoundscapeManifest.txt", "w+") as pFile:
+    with open(f"{strMergeDir}/scripts/soundscapes_manifest.txt", "w+") as pFile:
         vk.save(dictSoundscapes, pFile)
         pFile.close()
 
-    with open("./testSurfaceManifest.txt", "w+") as pFile:
+    with open(f"{strMergeDir}/scripts/surfaceproperties_manifest.txt", "w+") as pFile:
         vk.save(dictSurfaceprop, pFile)
+        pFile.close()
+
+    #Update the localization file.
+
+    with open(f"{strMergeDir}/resource/gameui_english.txt", "wb+") as pFile:
+        pFile.seek(0)
+        pFile.truncate()
+        strAddons = addonStringNames(arrAddons)
+        pFile.write(ba.unhexlify("FFFE"))
+        pFile.write(dk.GAME_OVERWRITE_STRING.format(strAddons).encode("utf-16-le"))
+        pFile.write(ba.unhexlify("0D000A00"))
         pFile.close()
 
     print(f"Merged {len(arrAddons)} addons!")
@@ -101,7 +121,7 @@ def mainGetMod(strPath):
 """
 Given a path to custom, return an array of paths inside of the directory, ignoring the merge addon.
 
-strPath:
+strPath: Custom directory root.
 """
 def mainGetAddons(strPath):
     arrAddons = []
@@ -114,6 +134,51 @@ def mainGetAddons(strPath):
     return arrAddons
 
 """
+Finds the alphabetically first addon and checks to see if it's a merger addon.
+If it is, it'll return the path to its root.
+If it's not, it'll create a name which comes alphabetically before the fist addon, then return the path to that new directory.
+
+merger addon is indicated by a simple addonignore.txt file in the root of the addon directory.
+
+strPath: Custom directory root.
+"""
+def mainGetMergeAddon(strPath):
+    strFirstAddon = None
+    try:
+        strFirstAddon = sorted(os.listdir(strPath))[0]
+        strFirstAddonDir = f"{strPath}/{strFirstAddon}"
+
+    except IndexError:
+        print("There are no addons in the custom directory!")
+        return None
+    
+    if not os.path.exists(f"{strFirstAddonDir}/addonignore.txt"):
+        #The first addon in the directory is a normal addon, not a merger.
+        #Create a new directory that comes before it, and set our addon to that.
+        strFirstAddon = f"a{strFirstAddon}addonmerge"
+        strFirstAddonDir = f"{strPath}/{strFirstAddon}"
+        
+        #Makedir and add in the ignore, along with default cfgs
+        os.makedirs(f"{strFirstAddonDir}/cfg")
+
+        with open(f"{strFirstAddonDir}/addonignore.txt", "x") as pFile:
+            pFile.write("This addon was created by a merging script to resolve any conflicting issues.\nPlease delete this addon or re-merge if you are experiencing any issues in-game.")
+            pFile.close()
+
+        with open(f"{strFirstAddonDir}/cfg/game.cfg", "x") as pFile:
+            pFile.write(dk.GAME_CFG)
+            pFile.close()
+        
+        with open(f"{strFirstAddonDir}/cfg/modsettings.cfg", "x") as pFile:
+            pFile.write(dk.MODSETTINGS_CFG)
+            pFile.close()
+
+    #The current path is a valid merge directory.
+
+    return strFirstAddonDir
+
+
+"""
 Converts an array of addon paths to only the addon name.
 
 arrAddons: Array of paths to addons.
@@ -123,6 +188,21 @@ def addonPathToName(arrAddons):
     for addon in arrAddons:
         arrAddonNames.append(os.path.basename(addon))
     return arrAddonNames
+
+"""
+Take an array of addons then return a string with all names broken with newlines.
+
+arrAddons: Array of paths to addons.
+"""
+def addonStringNames(arrAddons):
+    strOutput = ""
+    if len(arrAddons) > 5:
+        strOutput = f"A total of {len(arrAddons)} have been merged!"
+    else:
+        for addon in arrAddons:
+            strOutput = f"{strOutput}\\n{os.path.basename(addon)}"
+    #Got all the addons.
+    return strOutput
 
 """
 Iterates over all given addon paths, checking and merging all keyval files of the same name.
@@ -166,15 +246,18 @@ def kvMergeFile(pFile, dictCurKeyvals):
     strManifestType = list(dictCurKeyvals.keys())[0]
 
     dictNewKeyvals = vk.load(pFile)
-
+    
+    strNewManifestType = list(dictNewKeyvals.keys())[0]
     #Check to see if the only key for both dictionaries are the same.
-    if(not strManifestType == list(dictNewKeyvals.keys())[0]):
-        #We should not be merging these files.
-        raise AttributeError(f"File associated with {list(dictNewKeyvals.keys())[0]} is trying to merge into the {strManifestType} dictionary.")
+    if(not strManifestType == strNewManifestType):
+        #Do one last check to make sure it's not dumbass Valve being dumbass Valve.
+        if not strNewManifestType in ["soundscapes_manifest", "soundscaples_manifest"]:
+            #We should not be merging these files.
+            raise AttributeError(f"File associated with {list(dictNewKeyvals.keys())[0]} is trying to merge into the {strManifestType} dictionary.")
 
     #We are good to merge, iterate over all keys in the new keyvals, then iterate over all entries.
 
-    for key, arrVals in dictNewKeyvals[strManifestType].items():
+    for key, arrVals in dictNewKeyvals[strNewManifestType].items():
         #Check to see if the key exists
         if not key in dictCurKeyvals[strManifestType].keys():
             #Key doesn't exist, create it.

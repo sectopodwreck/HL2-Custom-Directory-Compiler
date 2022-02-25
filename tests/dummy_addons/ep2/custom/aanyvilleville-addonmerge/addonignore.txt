@@ -1,0 +1,2 @@
+This addon was created by a merging script to resolve any conflicting issues.
+Please delete this addon or re-merge if you are experiencing any issues in-game.
