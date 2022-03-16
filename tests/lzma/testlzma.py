@@ -55,7 +55,6 @@ fh = open(sys.path[0] +'/entry.lzma', 'rb')
 ba = b'' + fh.read()
 decompressed = decompress_lzma(ba)
 print(decompressed)
-print(decompressed.decode())
 
 
 
