@@ -1,0 +1,70 @@
+Scenes.Image Notes
+
+sceneimage.cpp
+sceneimagefile.h
+
+Definitions
+	SCENE_IMAGE_ID = "VSIF"
+	SCENE_IMAGE_VERSION = 2
+	
+	// scene summary: cached calcs for commmon startup queries, variable sized
+	struct SceneImageSummary_t
+	{
+		unsigned int	msecs;
+		int				numSounds;
+		int				soundStrings[1];	// has numSounds
+	};
+
+	// stored sorted by crc filename for binary search
+	struct SceneImageEntry_t
+	{
+		CRC32_t	crcFilename;			// expected to be normalized as scenes\???.vcd
+		int		nDataOffset;			// offset to dword aligned data from start
+		int		nDataLength;
+		int		nSceneSummaryOffset;	// offset to summary
+	};
+
+	struct SceneImageHeader_t
+	{
+		int nId;
+		int	nVersion;
+		int nNumScenes;				// number of scene files
+		int	nNumStrings;			// number of unique strings in table
+		int nSceneEntryOffset;
+
+		inline const char *String( short iString )
+		{
+			if ( iString < 0 || iString >= nNumStrings )
+			{
+				Assert( 0 );
+				return NULL;
+			}
+
+			// access string table (after header) to access pool
+			unsigned int *pTable = (unsigned int *)((byte *)this + sizeof( SceneImageHeader_t ));
+			return (char *)this + pTable[iString];
+		}
+	};
+
+NOTE: The Scene Entries order is determined by the HASHED filenames, in ascending order.
+
+CSceneImage::CreateSceneImageFile
+
+CChoreoEvent Data Struct
+	(int)Char Event_Type
+	Short	Name_Offset
+	Float	Start
+	Flaot	End
+	Short	Params_1_Offset
+	Short	Params_2_Offset
+	Short	Params_3_Offset
+	UChar	Flags
+	Float	Dist_To_Target
+	UChar	Num_Rel_Tags
+		Short	Tag_Name
+		UChar	Percentage
+	UChar	Num_Timing_Tags
+		Short	Tag_Name
+		UChar	Percentage
+	
+	

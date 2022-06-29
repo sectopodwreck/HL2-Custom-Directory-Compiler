@@ -1,0 +1,42 @@
+BVCD Notes
+
+Definitions:
+	CChoreoScene::SCENE_BINARY_TAG = "bvcd"
+	CChoreoScene::SCENE_BINARY_VERSION = 0x04
+	CChoreoScene::m_Events = Global vector of CChoreoEvent
+	CChoreoEvent::EVENTTYPE = enum {
+		UNSPECIFIED = 0,
+		SECTION,
+		EXPRESSION,
+		LOOKAT,
+		MOVETO,
+		SPEAK,
+		GESTURE,
+		SEQUENCE,
+		FACE,
+		FIRETRIGGER,
+		FLEXANIMATION,
+		SUBSCENE,
+		LOOP,
+		INTERRUPT,
+		STOPPOINT,
+		PERMIT_RESPONSES,
+		GENERIC,
+		NUM_TYPES,
+	}
+
+Starts at CChoreoScene::SaveBinary
+	Calls CChoreoScene::SaveToBinaryBuffer with an integer and iChoreoStringPool
+		Writes SCENE_BINARY_TAG
+		Writes SCENE_BINARY_VERSION
+		Writes nTextVersionCRC
+		Create array of events (eventList)
+		//Get events without actors
+		Iterates over m_Events
+			Check to see if it doesn't have an actor.
+			Append the event to the tail.
+		Get a list of the count, assert it's below 255.
+		Write the count to the buffer
+		Iterate over eventList, call CChoreoEvent::SaveToBuffer
+			Write as char GetType() (CChoreoEvent::EVENTTYPE)
+			Write as short
